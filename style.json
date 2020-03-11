@@ -92,12 +92,17 @@
       "source": "v",
       "source-layer": "waterarea",
       "filter": [
-        "all",
+        "match",
         [
-          "==",
-          "ftCode",
+          "get",
+          "ftCode"
+        ],
+        [
           55000
-        ]
+          5000
+        ],
+        true,
+        false
       ],
       "paint": {
         "fill-color": "rgb(190,210,255)"
