@@ -9,11 +9,12 @@ style.sources.v.tiles[0] =
 
 layers = []
 
+let count = 0
 for(layer of style.layers) {
   if (layer.type === 'background') {
   } else {
     layer.source = 'v'
-    layer.id = layer.metadata.path + layer.minzoom
+    layer.id = layer.metadata.path + ++count
     delete layer.metadata
     layers.push(layer)
   }
