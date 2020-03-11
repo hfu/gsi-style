@@ -1,7 +1,8 @@
 const fs = require('fs')
 
 let style = JSON.parse(fs.readFileSync('src/style.json'))
-style.sprite = 'https://hfu.github.io/gsi-style/sprite/std'
+style.sprite = 
+  'https://un-vector-tile-toolkit.github.io/kawagoe/sprite/std'
 style.sources.v = style.sources['gsibv-vectortile-source-1-4-17']
 delete style.sources['gsibv-vectortile-source-1-4-17']
 style.sources.v.tiles[0] = 
