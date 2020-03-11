@@ -29,6 +29,10 @@ for(layer of style.layers) {
     layer.source = 'v'
     layer.id = layer.metadata.path + ++count
     delete layer.metadata
+    if (layer.layout && layer.layout['icon-image']) {
+      layer.layout['icon-image'] =
+        layer.layout['icon-image'].toString().replace(/std\/\/\//, '')
+    }
     layers.push(layer)
   }
 }
