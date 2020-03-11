@@ -13,7 +13,7 @@
   },
   "layers": [
     {
-      "id": "河川-人工水路（地下）",
+      "id": "河川-人工水路（地下）8",
       "type": "line",
       "source": "v",
       "source-layer": "river",
@@ -51,21 +51,19 @@
       }
     },
     {
-      "id": "河川-枯れ川部",
+      "id": "河川-枯れ川部8",
       "type": "line",
       "source": "v",
       "source-layer": "river",
+      "minzoom": 8,
+      "maxzoom": 17,
       "filter": [
-        "match",
+        "all",
         [
-          "get",
-          "ftCode"
-        ],
-        [
+          "==",
+          "ftCode",
           5302
-        ],
-        true,
-        false
+        ]
       ],
       "layout": {
         "line-cap": "square"
@@ -87,29 +85,87 @@
       }
     },
     {
-      "id": "水域",
+      "id": "河川-枯れ川部17",
+      "type": "line",
+      "source": "v",
+      "source-layer": "river",
+      "minzoom": 17,
+      "maxzoom": 18,
+      "filter": [
+        "all",
+        [
+          "==",
+          "ftCode",
+          5302
+        ]
+      ],
+      "layout": {
+        "line-cap": "square"
+      },
+      "paint": {
+        "line-color": "rgb(20,90,255)",
+        "line-width": 1
+      }
+    },
+    {
+      "id": "水域4",
       "type": "fill",
       "source": "v",
       "source-layer": "waterarea",
+      "minzoom": 4,
+      "maxzoom": 8,
       "filter": [
-        "match",
+        "all",
         [
-          "get",
-          "ftCode"
-        ],
-        [
-          55000,
-          5000
-        ],
-        true,
-        false
+          "==",
+          "ftCode",
+          55000
+        ]
       ],
       "paint": {
         "fill-color": "rgb(190,210,255)"
       }
     },
     {
-      "id": "湖池-湖池",
+      "id": "水域8",
+      "type": "fill",
+      "source": "v",
+      "source-layer": "waterarea",
+      "minzoom": 8,
+      "maxzoom": 17,
+      "filter": [
+        "all",
+        [
+          "==",
+          "ftCode",
+          5000
+        ]
+      ],
+      "paint": {
+        "fill-color": "rgb(190,210,255)"
+      }
+    },
+    {
+      "id": "水域17",
+      "type": "fill",
+      "source": "v",
+      "source-layer": "waterarea",
+      "minzoom": 17,
+      "maxzoom": 18,
+      "filter": [
+        "all",
+        [
+          "==",
+          "ftCode",
+          5000
+        ]
+      ],
+      "paint": {
+        "fill-color": "rgb(190,210,255)"
+      }
+    },
+    {
+      "id": "湖池-湖池4",
       "type": "line",
       "source": "v",
       "source-layer": "lake",
@@ -132,7 +188,7 @@
       }
     },
     {
-      "id": "地形-湖底急斜面",
+      "id": "地形-湖底急斜面14",
       "type": "line",
       "source": "v",
       "source-layer": "landforml",
@@ -155,7 +211,7 @@
       }
     },
     {
-      "id": "地形-湖底急斜面",
+      "id": "地形-湖底急斜面17",
       "type": "line",
       "source": "v",
       "source-layer": "landforml",
@@ -178,7 +234,7 @@
       }
     },
     {
-      "id": "湖池-通常部",
+      "id": "湖池-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "lake",
@@ -201,7 +257,7 @@
       }
     },
     {
-      "id": "湖池-通常部",
+      "id": "湖池-通常部17",
       "type": "line",
       "source": "v",
       "source-layer": "lake",
@@ -224,7 +280,7 @@
       }
     },
     {
-      "id": "湖池-岩等に接する部分",
+      "id": "湖池-岩等に接する部分11",
       "type": "line",
       "source": "v",
       "source-layer": "lake",
@@ -247,7 +303,7 @@
       }
     },
     {
-      "id": "湖池-堤防等に接する部分",
+      "id": "湖池-堤防等に接する部分11",
       "type": "line",
       "source": "v",
       "source-layer": "lake",
@@ -274,7 +330,7 @@
       }
     },
     {
-      "id": "湖池-堤防等に接する部分",
+      "id": "湖池-堤防等に接する部分11",
       "type": "line",
       "source": "v",
       "source-layer": "lake",
@@ -298,7 +354,7 @@
       }
     },
     {
-      "id": "湖池-堤防等に接する部分",
+      "id": "湖池-堤防等に接する部分17",
       "type": "line",
       "source": "v",
       "source-layer": "lake",
@@ -321,7 +377,7 @@
       }
     },
     {
-      "id": "河川-堤防等に接する部分",
+      "id": "河川-堤防等に接する部分8",
       "type": "line",
       "source": "v",
       "source-layer": "river",
@@ -344,7 +400,7 @@
       }
     },
     {
-      "id": "河川-堤防等に接する部分",
+      "id": "河川-堤防等に接する部分17",
       "type": "line",
       "source": "v",
       "source-layer": "river",
@@ -367,7 +423,7 @@
       }
     },
     {
-      "id": "河川-岩等に接する部分",
+      "id": "河川-岩等に接する部分8",
       "type": "line",
       "source": "v",
       "source-layer": "river",
@@ -401,7 +457,7 @@
       }
     },
     {
-      "id": "河川-通常部",
+      "id": "河川-通常部8",
       "type": "line",
       "source": "v",
       "source-layer": "river",
@@ -429,7 +485,7 @@
       }
     },
     {
-      "id": "河川-通常部",
+      "id": "河川-通常部17",
       "type": "line",
       "source": "v",
       "source-layer": "river",
@@ -457,7 +513,7 @@
       }
     },
     {
-      "id": "河川-河川幅(大)",
+      "id": "河川-河川幅(大)6",
       "type": "line",
       "source": "v",
       "source-layer": "river",
@@ -491,7 +547,7 @@
       }
     },
     {
-      "id": "河川-河川幅(中)",
+      "id": "河川-河川幅(中)6",
       "type": "line",
       "source": "v",
       "source-layer": "river",
@@ -525,7 +581,7 @@
       }
     },
     {
-      "id": "河川-河川幅(小)",
+      "id": "河川-河川幅(小)6",
       "type": "line",
       "source": "v",
       "source-layer": "river",
@@ -559,7 +615,7 @@
       }
     },
     {
-      "id": "河川-河川幅(極小)",
+      "id": "河川-河川幅(極小)6",
       "type": "line",
       "source": "v",
       "source-layer": "river",
@@ -593,7 +649,7 @@
       }
     },
     {
-      "id": "海岸線-通常部",
+      "id": "海岸線-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "coastline",
@@ -616,7 +672,7 @@
       }
     },
     {
-      "id": "海岸線-通常部",
+      "id": "海岸線-通常部17",
       "type": "line",
       "source": "v",
       "source-layer": "coastline",
@@ -639,7 +695,7 @@
       }
     },
     {
-      "id": "海岸線-岩等に接する部分",
+      "id": "海岸線-岩等に接する部分11",
       "type": "line",
       "source": "v",
       "source-layer": "coastline",
@@ -662,7 +718,7 @@
       }
     },
     {
-      "id": "海岸線-堤防等に接する部分",
+      "id": "海岸線-堤防等に接する部分11",
       "type": "line",
       "source": "v",
       "source-layer": "coastline",
@@ -685,7 +741,7 @@
       }
     },
     {
-      "id": "海岸線-堤防等に接する部分",
+      "id": "海岸線-堤防等に接する部分14",
       "type": "line",
       "source": "v",
       "source-layer": "coastline",
@@ -712,7 +768,7 @@
       }
     },
     {
-      "id": "海岸線-堤防等に接する部分",
+      "id": "海岸線-堤防等に接する部分14",
       "type": "line",
       "source": "v",
       "source-layer": "coastline",
@@ -736,7 +792,7 @@
       }
     },
     {
-      "id": "海岸線-堤防等に接する部分",
+      "id": "海岸線-堤防等に接する部分17",
       "type": "line",
       "source": "v",
       "source-layer": "coastline",
@@ -763,7 +819,7 @@
       }
     },
     {
-      "id": "海岸線-堤防等に接する部分",
+      "id": "海岸線-堤防等に接する部分17",
       "type": "line",
       "source": "v",
       "source-layer": "coastline",
@@ -787,7 +843,7 @@
       }
     },
     {
-      "id": "海岸線-海岸線",
+      "id": "海岸線-海岸線4",
       "type": "line",
       "source": "v",
       "source-layer": "coastline",
@@ -810,7 +866,7 @@
       }
     },
     {
-      "id": "地形-枯れ川水涯線",
+      "id": "地形-枯れ川水涯線14",
       "type": "line",
       "source": "v",
       "source-layer": "landforml",
@@ -837,7 +893,7 @@
       }
     },
     {
-      "id": "地形-枯れ川水涯線",
+      "id": "地形-枯れ川水涯線17",
       "type": "line",
       "source": "v",
       "source-layer": "landforml",
@@ -864,7 +920,7 @@
       }
     },
     {
-      "id": "地形-干潟界",
+      "id": "地形-干潟界14",
       "type": "line",
       "source": "v",
       "source-layer": "landforml",
@@ -891,7 +947,7 @@
       }
     },
     {
-      "id": "地形-干潟界",
+      "id": "地形-干潟界17",
       "type": "line",
       "source": "v",
       "source-layer": "landforml",
@@ -918,7 +974,7 @@
       }
     },
     {
-      "id": "地形-湿地",
+      "id": "地形-湿地8",
       "type": "line",
       "source": "v",
       "source-layer": "landforma",
@@ -938,7 +994,7 @@
       }
     },
     {
-      "id": "地形-湿地",
+      "id": "地形-湿地8",
       "type": "fill",
       "source": "v",
       "source-layer": "landforma",
@@ -957,7 +1013,7 @@
       }
     },
     {
-      "id": "地形-湿地",
+      "id": "地形-湿地11",
       "type": "line",
       "source": "v",
       "source-layer": "landforma",
@@ -977,7 +1033,7 @@
       }
     },
     {
-      "id": "地形-湿地",
+      "id": "地形-湿地11",
       "type": "fill",
       "source": "v",
       "source-layer": "landforma",
@@ -996,7 +1052,7 @@
       }
     },
     {
-      "id": "地形-万年雪",
+      "id": "地形-万年雪14",
       "type": "fill",
       "source": "v",
       "source-layer": "landforma",
@@ -1015,7 +1071,7 @@
       }
     },
     {
-      "id": "等高線等深線-等深線-計曲線通常部",
+      "id": "等高線等深線-等深線-計曲線通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "contour",
@@ -1051,7 +1107,7 @@
       }
     },
     {
-      "id": "等高線等深線-等深線-主曲線通常部",
+      "id": "等高線等深線-等深線-主曲線通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "contour",
@@ -1091,7 +1147,7 @@
       }
     },
     {
-      "id": "等高線等深線-等深線-主曲線通常部",
+      "id": "等高線等深線-等深線-主曲線通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "contour",
@@ -1127,7 +1183,7 @@
       }
     },
     {
-      "id": "等高線等深線-等深線-補助曲線通常部",
+      "id": "等高線等深線-等深線-補助曲線通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "contour",
@@ -1167,7 +1223,7 @@
       }
     },
     {
-      "id": "等高線等深線-等深線-等深線数値部",
+      "id": "等高線等深線-等深線-等深線数値部11",
       "type": "symbol",
       "source": "v",
       "source-layer": "contour",
@@ -1374,7 +1430,7 @@
       }
     },
     {
-      "id": "等高線等深線-等深線-計曲線崖部",
+      "id": "等高線等深線-等深線-計曲線崖部11",
       "type": "line",
       "source": "v",
       "source-layer": "contour",
@@ -1410,7 +1466,7 @@
       }
     },
     {
-      "id": "地形-隠顕岩",
+      "id": "地形-隠顕岩14",
       "type": "line",
       "source": "v",
       "source-layer": "landforml",
@@ -1433,7 +1489,7 @@
       }
     },
     {
-      "id": "地形-隠顕岩",
+      "id": "地形-隠顕岩17",
       "type": "line",
       "source": "v",
       "source-layer": "landforml",
@@ -1456,7 +1512,7 @@
       }
     },
     {
-      "id": "地形-砂礫地（領域が明瞭な場合）",
+      "id": "地形-砂礫地（領域が明瞭な場合）8",
       "type": "fill",
       "source": "v",
       "source-layer": "landforma",
@@ -1475,7 +1531,7 @@
       }
     },
     {
-      "id": "地形-砂礫地（領域が明瞭な場合）",
+      "id": "地形-砂礫地（領域が明瞭な場合）17",
       "type": "fill",
       "source": "v",
       "source-layer": "landforma",
@@ -1494,7 +1550,7 @@
       }
     },
     {
-      "id": "地形-凹地方向線-大凹地（突起部）",
+      "id": "地形-凹地方向線-大凹地（突起部）14",
       "type": "line",
       "source": "v",
       "source-layer": "landforml",
@@ -1517,7 +1573,7 @@
       }
     },
     {
-      "id": "地形-凹地方向線-大凹地（突起部）",
+      "id": "地形-凹地方向線-大凹地（突起部）17",
       "type": "line",
       "source": "v",
       "source-layer": "landforml",
@@ -1540,7 +1596,7 @@
       }
     },
     {
-      "id": "地形-凹地方向線-小凹地（矢印）",
+      "id": "地形-凹地方向線-小凹地（矢印）14",
       "type": "line",
       "source": "v",
       "source-layer": "landforml",
@@ -1563,7 +1619,7 @@
       }
     },
     {
-      "id": "地形-凹地方向線-小凹地（矢印）",
+      "id": "地形-凹地方向線-小凹地（矢印）17",
       "type": "line",
       "source": "v",
       "source-layer": "landforml",
@@ -1586,7 +1642,7 @@
       }
     },
     {
-      "id": "地形-雨裂（上部）",
+      "id": "地形-雨裂（上部）14",
       "type": "line",
       "source": "v",
       "source-layer": "landforml",
@@ -1609,7 +1665,7 @@
       }
     },
     {
-      "id": "地形-雨裂（上部）",
+      "id": "地形-雨裂（上部）17",
       "type": "line",
       "source": "v",
       "source-layer": "landforml",
@@ -1632,7 +1688,7 @@
       }
     },
     {
-      "id": "地形-岩",
+      "id": "地形-岩14",
       "type": "line",
       "source": "v",
       "source-layer": "landforml",
@@ -1655,7 +1711,7 @@
       }
     },
     {
-      "id": "地形-岩",
+      "id": "地形-岩17",
       "type": "line",
       "source": "v",
       "source-layer": "landforml",
@@ -1678,7 +1734,7 @@
       }
     },
     {
-      "id": "地形-岩崖",
+      "id": "地形-岩崖14",
       "type": "line",
       "source": "v",
       "source-layer": "landforml",
@@ -1701,7 +1757,7 @@
       }
     },
     {
-      "id": "地形-岩崖",
+      "id": "地形-岩崖17",
       "type": "line",
       "source": "v",
       "source-layer": "landforml",
@@ -1724,7 +1780,7 @@
       }
     },
     {
-      "id": "地形-土崖（不明）",
+      "id": "地形-土崖（不明）14",
       "type": "line",
       "source": "v",
       "source-layer": "landforml",
@@ -1747,7 +1803,7 @@
       }
     },
     {
-      "id": "地形-土崖（不明）",
+      "id": "地形-土崖（不明）17",
       "type": "line",
       "source": "v",
       "source-layer": "landforml",
@@ -1770,7 +1826,7 @@
       }
     },
     {
-      "id": "地形-土崖-コンクリート、堅固な石積等斜面",
+      "id": "地形-土崖-コンクリート、堅固な石積等斜面14",
       "type": "line",
       "source": "v",
       "source-layer": "landforml",
@@ -1793,7 +1849,7 @@
       }
     },
     {
-      "id": "地形-土崖-コンクリート、堅固な石積等斜面",
+      "id": "地形-土崖-コンクリート、堅固な石積等斜面17",
       "type": "line",
       "source": "v",
       "source-layer": "landforml",
@@ -1816,7 +1872,7 @@
       }
     },
     {
-      "id": "地形-土崖-コンクリート、堅固な石積でない斜面",
+      "id": "地形-土崖-コンクリート、堅固な石積でない斜面14",
       "type": "line",
       "source": "v",
       "source-layer": "landforml",
@@ -1839,7 +1895,7 @@
       }
     },
     {
-      "id": "地形-土崖-コンクリート、堅固な石積でない斜面",
+      "id": "地形-土崖-コンクリート、堅固な石積でない斜面17",
       "type": "line",
       "source": "v",
       "source-layer": "landforml",
@@ -1862,7 +1918,7 @@
       }
     },
     {
-      "id": "等高線等深線-等高線-計曲線通常部",
+      "id": "等高線等深線-等高線-計曲線通常部8",
       "type": "line",
       "source": "v",
       "source-layer": "contour",
@@ -1890,7 +1946,7 @@
       }
     },
     {
-      "id": "等高線等深線-等高線-主曲線通常部",
+      "id": "等高線等深線-等高線-主曲線通常部8",
       "type": "line",
       "source": "v",
       "source-layer": "contour",
@@ -1918,7 +1974,7 @@
       }
     },
     {
-      "id": "等高線等深線-等高線-補助曲線通常部",
+      "id": "等高線等深線-等高線-補助曲線通常部8",
       "type": "line",
       "source": "v",
       "source-layer": "contour",
@@ -1950,7 +2006,7 @@
       }
     },
     {
-      "id": "等高線等深線-等高線-等高線数値部",
+      "id": "等高線等深線-等高線-等高線数値部8",
       "type": "symbol",
       "source": "v",
       "source-layer": "contour",
@@ -1991,7 +2047,7 @@
       }
     },
     {
-      "id": "等高線等深線-等高線-計曲線崖部",
+      "id": "等高線等深線-等高線-計曲線崖部8",
       "type": "line",
       "source": "v",
       "source-layer": "contour",
@@ -2019,7 +2075,7 @@
       }
     },
     {
-      "id": "構造物-送電線",
+      "id": "構造物-送電線14",
       "type": "line",
       "source": "v",
       "source-layer": "structurel",
@@ -2042,7 +2098,7 @@
       }
     },
     {
-      "id": "構造物-送電線",
+      "id": "構造物-送電線14",
       "type": "line",
       "source": "v",
       "source-layer": "structurel",
@@ -2070,7 +2126,7 @@
       }
     },
     {
-      "id": "構造物-送電線",
+      "id": "構造物-送電線14",
       "type": "line",
       "source": "v",
       "source-layer": "structurel",
@@ -2098,7 +2154,7 @@
       }
     },
     {
-      "id": "構造物-ダム（面）",
+      "id": "構造物-ダム（面）11",
       "type": "line",
       "source": "v",
       "source-layer": "structurea",
@@ -2118,7 +2174,7 @@
       }
     },
     {
-      "id": "構造物-ダム（面）",
+      "id": "構造物-ダム（面）11",
       "type": "fill",
       "source": "v",
       "source-layer": "structurea",
@@ -2137,7 +2193,7 @@
       }
     },
     {
-      "id": "構造物-タンク",
+      "id": "構造物-タンク13",
       "type": "line",
       "source": "v",
       "source-layer": "structurea",
@@ -2161,7 +2217,7 @@
       }
     },
     {
-      "id": "構造物-タンク",
+      "id": "構造物-タンク13",
       "type": "fill",
       "source": "v",
       "source-layer": "structurea",
@@ -2180,7 +2236,7 @@
       }
     },
     {
-      "id": "構造物-タンク",
+      "id": "構造物-タンク17",
       "type": "line",
       "source": "v",
       "source-layer": "structurea",
@@ -2204,7 +2260,7 @@
       }
     },
     {
-      "id": "構造物-タンク",
+      "id": "構造物-タンク17",
       "type": "fill",
       "source": "v",
       "source-layer": "structurea",
@@ -2223,7 +2279,7 @@
       }
     },
     {
-      "id": "構造物-巨大構造物",
+      "id": "構造物-巨大構造物13",
       "type": "line",
       "source": "v",
       "source-layer": "structurea",
@@ -2247,7 +2303,7 @@
       }
     },
     {
-      "id": "構造物-巨大構造物",
+      "id": "構造物-巨大構造物13",
       "type": "fill",
       "source": "v",
       "source-layer": "structurea",
@@ -2266,7 +2322,7 @@
       }
     },
     {
-      "id": "構造物-巨大構造物",
+      "id": "構造物-巨大構造物17",
       "type": "line",
       "source": "v",
       "source-layer": "structurea",
@@ -2290,7 +2346,7 @@
       }
     },
     {
-      "id": "構造物-巨大構造物",
+      "id": "構造物-巨大構造物17",
       "type": "fill",
       "source": "v",
       "source-layer": "structurea",
@@ -2309,7 +2365,7 @@
       }
     },
     {
-      "id": "記号-墓地",
+      "id": "記号-墓地14",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -2351,7 +2407,7 @@
       }
     },
     {
-      "id": "記号-田",
+      "id": "記号-田13",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -2397,7 +2453,7 @@
       }
     },
     {
-      "id": "記号-畑",
+      "id": "記号-畑13",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -2443,7 +2499,7 @@
       }
     },
     {
-      "id": "記号-茶畑",
+      "id": "記号-茶畑13",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -2489,7 +2545,7 @@
       }
     },
     {
-      "id": "記号-果樹園",
+      "id": "記号-果樹園13",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -2535,7 +2591,7 @@
       }
     },
     {
-      "id": "記号-広葉樹林",
+      "id": "記号-広葉樹林13",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -2581,7 +2637,7 @@
       }
     },
     {
-      "id": "記号-針葉樹林",
+      "id": "記号-針葉樹林13",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -2627,7 +2683,7 @@
       }
     },
     {
-      "id": "記号-竹林",
+      "id": "記号-竹林14",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -2669,7 +2725,7 @@
       }
     },
     {
-      "id": "記号-ヤシ科樹林",
+      "id": "記号-ヤシ科樹林13",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -2715,7 +2771,7 @@
       }
     },
     {
-      "id": "記号-ハイマツ地",
+      "id": "記号-ハイマツ地14",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -2757,7 +2813,7 @@
       }
     },
     {
-      "id": "記号-笹地",
+      "id": "記号-笹地14",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -2799,7 +2855,7 @@
       }
     },
     {
-      "id": "記号-荒地",
+      "id": "記号-荒地14",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -2841,7 +2897,7 @@
       }
     },
     {
-      "id": "航路-水上・海上交通　船舶",
+      "id": "航路-水上・海上交通　船舶14",
       "type": "line",
       "source": "v",
       "source-layer": "searoute",
@@ -2864,7 +2920,7 @@
       }
     },
     {
-      "id": "航路-水上・海上交通　航路の軌跡",
+      "id": "航路-水上・海上交通　航路の軌跡8",
       "type": "line",
       "source": "v",
       "source-layer": "searoute",
@@ -2891,7 +2947,7 @@
       }
     },
     {
-      "id": "航路-航路",
+      "id": "航路-航路6",
       "type": "line",
       "source": "v",
       "source-layer": "searoute",
@@ -2918,7 +2974,7 @@
       }
     },
     {
-      "id": "境界-特定地区界-特定地区界",
+      "id": "境界-特定地区界-特定地区界12",
       "type": "line",
       "source": "v",
       "source-layer": "boundary",
@@ -2941,7 +2997,7 @@
       }
     },
     {
-      "id": "境界-特定地区界-特定地区界",
+      "id": "境界-特定地区界-特定地区界14",
       "type": "line",
       "source": "v",
       "source-layer": "boundary",
@@ -2968,7 +3024,7 @@
       }
     },
     {
-      "id": "境界-特定地区界-特定地区界",
+      "id": "境界-特定地区界-特定地区界17",
       "type": "line",
       "source": "v",
       "source-layer": "boundary",
@@ -2995,7 +3051,7 @@
       }
     },
     {
-      "id": "境界-特定地区界-その他の特定地区界",
+      "id": "境界-特定地区界-その他の特定地区界14",
       "type": "line",
       "source": "v",
       "source-layer": "boundary",
@@ -3022,7 +3078,7 @@
       }
     },
     {
-      "id": "地形-滝（線）",
+      "id": "地形-滝（線）14",
       "type": "line",
       "source": "v",
       "source-layer": "landforml",
@@ -3046,7 +3102,7 @@
       }
     },
     {
-      "id": "地形-滝（線）",
+      "id": "地形-滝（線）14",
       "type": "line",
       "source": "v",
       "source-layer": "landforml",
@@ -3074,7 +3130,7 @@
       }
     },
     {
-      "id": "構造物-高塔",
+      "id": "構造物-高塔14",
       "type": "line",
       "source": "v",
       "source-layer": "structurel",
@@ -3097,7 +3153,7 @@
       }
     },
     {
-      "id": "構造物-ダム（線）",
+      "id": "構造物-ダム（線）14",
       "type": "line",
       "source": "v",
       "source-layer": "structurel",
@@ -3120,7 +3176,7 @@
       }
     },
     {
-      "id": "構造物-せき",
+      "id": "構造物-せき14",
       "type": "line",
       "source": "v",
       "source-layer": "structurel",
@@ -3144,7 +3200,7 @@
       }
     },
     {
-      "id": "構造物-せき",
+      "id": "構造物-せき14",
       "type": "line",
       "source": "v",
       "source-layer": "structurel",
@@ -3172,7 +3228,7 @@
       }
     },
     {
-      "id": "構造物-せき",
+      "id": "構造物-せき17",
       "type": "line",
       "source": "v",
       "source-layer": "structurel",
@@ -3195,7 +3251,7 @@
       }
     },
     {
-      "id": "構造物-水門",
+      "id": "構造物-水門14",
       "type": "line",
       "source": "v",
       "source-layer": "structurel",
@@ -3218,7 +3274,7 @@
       }
     },
     {
-      "id": "構造物-水門",
+      "id": "構造物-水門17",
       "type": "line",
       "source": "v",
       "source-layer": "structurel",
@@ -3241,7 +3297,7 @@
       }
     },
     {
-      "id": "構造物-透過水制",
+      "id": "構造物-透過水制14",
       "type": "line",
       "source": "v",
       "source-layer": "structurel",
@@ -3268,7 +3324,7 @@
       }
     },
     {
-      "id": "構造物-透過水制",
+      "id": "構造物-透過水制17",
       "type": "line",
       "source": "v",
       "source-layer": "structurel",
@@ -3291,7 +3347,7 @@
       }
     },
     {
-      "id": "構造物-河川トンネル口",
+      "id": "構造物-河川トンネル口14",
       "type": "line",
       "source": "v",
       "source-layer": "structurel",
@@ -3314,7 +3370,7 @@
       }
     },
     {
-      "id": "構造物-ダム",
+      "id": "構造物-ダム17",
       "type": "line",
       "source": "v",
       "source-layer": "structurel",
@@ -3337,7 +3393,7 @@
       }
     },
     {
-      "id": "構造物-砂防ダム",
+      "id": "構造物-砂防ダム17",
       "type": "line",
       "source": "v",
       "source-layer": "structurel",
@@ -3360,7 +3416,7 @@
       }
     },
     {
-      "id": "構造物-桟橋（鉄、コンクリート）",
+      "id": "構造物-桟橋（鉄、コンクリート）17",
       "type": "line",
       "source": "v",
       "source-layer": "structurel",
@@ -3383,7 +3439,7 @@
       }
     },
     {
-      "id": "構造物-被覆",
+      "id": "構造物-被覆17",
       "type": "line",
       "source": "v",
       "source-layer": "structurel",
@@ -3406,7 +3462,7 @@
       }
     },
     {
-      "id": "構造物-防波堤",
+      "id": "構造物-防波堤17",
       "type": "line",
       "source": "v",
       "source-layer": "structurel",
@@ -3429,7 +3485,7 @@
       }
     },
     {
-      "id": "構造物-敷石斜坂",
+      "id": "構造物-敷石斜坂17",
       "type": "line",
       "source": "v",
       "source-layer": "structurel",
@@ -3452,7 +3508,7 @@
       }
     },
     {
-      "id": "構造物-滝",
+      "id": "構造物-滝17",
       "type": "line",
       "source": "v",
       "source-layer": "structurel",
@@ -3475,7 +3531,7 @@
       }
     },
     {
-      "id": "構造物-不透過水制",
+      "id": "構造物-不透過水制17",
       "type": "line",
       "source": "v",
       "source-layer": "structurel",
@@ -3498,7 +3554,7 @@
       }
     },
     {
-      "id": "構造物-雨水桝",
+      "id": "構造物-雨水桝17",
       "type": "line",
       "source": "v",
       "source-layer": "structurel",
@@ -3521,7 +3577,7 @@
       }
     },
     {
-      "id": "建物-普通建物-普通建物",
+      "id": "建物-普通建物-普通建物17",
       "type": "fill",
       "source": "v",
       "source-layer": "building",
@@ -3545,7 +3601,7 @@
       }
     },
     {
-      "id": "建物-普通建物-普通建物（外周線）",
+      "id": "建物-普通建物-普通建物（外周線）17",
       "type": "line",
       "source": "v",
       "source-layer": "building",
@@ -3573,7 +3629,7 @@
       }
     },
     {
-      "id": "建物-堅ろう建物-堅ろう建物",
+      "id": "建物-堅ろう建物-堅ろう建物13",
       "type": "fill",
       "source": "v",
       "source-layer": "building",
@@ -3597,7 +3653,7 @@
       }
     },
     {
-      "id": "建物-堅ろう建物-堅ろう建物",
+      "id": "建物-堅ろう建物-堅ろう建物17",
       "type": "fill",
       "source": "v",
       "source-layer": "building",
@@ -3621,7 +3677,7 @@
       }
     },
     {
-      "id": "建物-堅ろう建物-堅ろう建物（外周線）",
+      "id": "建物-堅ろう建物-堅ろう建物（外周線）13",
       "type": "line",
       "source": "v",
       "source-layer": "building",
@@ -3649,7 +3705,7 @@
       }
     },
     {
-      "id": "建物-堅ろう建物-堅ろう建物（外周線）",
+      "id": "建物-堅ろう建物-堅ろう建物（外周線）17",
       "type": "line",
       "source": "v",
       "source-layer": "building",
@@ -3677,7 +3733,7 @@
       }
     },
     {
-      "id": "建物-高層建物-高層建物",
+      "id": "建物-高層建物-高層建物13",
       "type": "fill",
       "source": "v",
       "source-layer": "building",
@@ -3701,7 +3757,7 @@
       }
     },
     {
-      "id": "建物-高層建物-高層建物",
+      "id": "建物-高層建物-高層建物17",
       "type": "fill",
       "source": "v",
       "source-layer": "building",
@@ -3725,7 +3781,7 @@
       }
     },
     {
-      "id": "建物-高層建物-高層建物（外周線）",
+      "id": "建物-高層建物-高層建物（外周線）13",
       "type": "line",
       "source": "v",
       "source-layer": "building",
@@ -3753,7 +3809,7 @@
       }
     },
     {
-      "id": "建物-高層建物-高層建物（外周線）",
+      "id": "建物-高層建物-高層建物（外周線）17",
       "type": "line",
       "source": "v",
       "source-layer": "building",
@@ -3781,7 +3837,7 @@
       }
     },
     {
-      "id": "建物-普通無壁舎-普通無壁舎",
+      "id": "建物-普通無壁舎-普通無壁舎17",
       "type": "fill",
       "source": "v",
       "source-layer": "building",
@@ -3805,7 +3861,7 @@
       }
     },
     {
-      "id": "建物-普通無壁舎-普通無壁舎（外周線）",
+      "id": "建物-普通無壁舎-普通無壁舎（外周線）17",
       "type": "line",
       "source": "v",
       "source-layer": "building",
@@ -3837,7 +3893,7 @@
       }
     },
     {
-      "id": "建物-堅ろう無壁舎-堅ろう無壁舎",
+      "id": "建物-堅ろう無壁舎-堅ろう無壁舎17",
       "type": "fill",
       "source": "v",
       "source-layer": "building",
@@ -3861,7 +3917,7 @@
       }
     },
     {
-      "id": "建物-堅ろう無壁舎-堅ろう無壁舎（外周線）",
+      "id": "建物-堅ろう無壁舎-堅ろう無壁舎（外周線）17",
       "type": "line",
       "source": "v",
       "source-layer": "building",
@@ -3893,7 +3949,7 @@
       }
     },
     {
-      "id": "建物-普通建物-普通建物",
+      "id": "建物-普通建物-普通建物14",
       "type": "fill",
       "source": "v",
       "source-layer": "building",
@@ -3932,7 +3988,7 @@
       }
     },
     {
-      "id": "建物-普通建物-普通建物（外周線）",
+      "id": "建物-普通建物-普通建物（外周線）14",
       "type": "line",
       "source": "v",
       "source-layer": "building",
@@ -3975,7 +4031,7 @@
       }
     },
     {
-      "id": "建物-堅ろう建物-堅ろう建物",
+      "id": "建物-堅ろう建物-堅ろう建物14",
       "type": "fill",
       "source": "v",
       "source-layer": "building",
@@ -4014,7 +4070,7 @@
       }
     },
     {
-      "id": "建物-堅ろう建物-堅ろう建物（外周線）",
+      "id": "建物-堅ろう建物-堅ろう建物（外周線）14",
       "type": "line",
       "source": "v",
       "source-layer": "building",
@@ -4057,7 +4113,7 @@
       }
     },
     {
-      "id": "建物-高層建物-高層建物",
+      "id": "建物-高層建物-高層建物14",
       "type": "fill",
       "source": "v",
       "source-layer": "building",
@@ -4096,7 +4152,7 @@
       }
     },
     {
-      "id": "建物-高層建物-高層建物（外周線）",
+      "id": "建物-高層建物-高層建物（外周線）14",
       "type": "line",
       "source": "v",
       "source-layer": "building",
@@ -4139,7 +4195,7 @@
       }
     },
     {
-      "id": "建物-普通無壁舎-普通無壁舎",
+      "id": "建物-普通無壁舎-普通無壁舎14",
       "type": "fill",
       "source": "v",
       "source-layer": "building",
@@ -4178,7 +4234,7 @@
       }
     },
     {
-      "id": "建物-普通無壁舎-普通無壁舎（外周線）",
+      "id": "建物-普通無壁舎-普通無壁舎（外周線）14",
       "type": "line",
       "source": "v",
       "source-layer": "building",
@@ -4225,7 +4281,7 @@
       }
     },
     {
-      "id": "建物-堅ろう無壁舎-堅ろう無壁舎",
+      "id": "建物-堅ろう無壁舎-堅ろう無壁舎14",
       "type": "fill",
       "source": "v",
       "source-layer": "building",
@@ -4264,7 +4320,7 @@
       }
     },
     {
-      "id": "建物-堅ろう無壁舎-堅ろう無壁舎（外周線）",
+      "id": "建物-堅ろう無壁舎-堅ろう無壁舎（外周線）14",
       "type": "line",
       "source": "v",
       "source-layer": "building",
@@ -4311,7 +4367,7 @@
       }
     },
     {
-      "id": "境界-行政界-都府県界及び北海道総合振興局・振興局界",
+      "id": "境界-行政界-都府県界及び北海道総合振興局・振興局界8",
       "type": "line",
       "source": "v",
       "source-layer": "boundary",
@@ -4340,7 +4396,7 @@
       }
     },
     {
-      "id": "境界-行政界-市区町村界",
+      "id": "境界-行政界-市区町村界11",
       "type": "line",
       "source": "v",
       "source-layer": "boundary",
@@ -4371,7 +4427,7 @@
       }
     },
     {
-      "id": "境界-行政界-所属界（所属を明示する境界線）",
+      "id": "境界-行政界-所属界（所属を明示する境界線）11",
       "type": "line",
       "source": "v",
       "source-layer": "boundary",
@@ -4400,7 +4456,7 @@
       }
     },
     {
-      "id": "境界-行政界-地方界",
+      "id": "境界-行政界-地方界6",
       "type": "line",
       "source": "v",
       "source-layer": "boundary",
@@ -4423,7 +4479,7 @@
       }
     },
     {
-      "id": "境界-行政界-国の所属界",
+      "id": "境界-行政界-国の所属界4",
       "type": "line",
       "source": "v",
       "source-layer": "boundary",
@@ -4446,7 +4502,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-通常部-通常部",
+      "id": "道路-都道府県道-通常部-通常部8",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -4493,7 +4549,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-3m未満・その他・不明-通常部",
+      "id": "道路-都道府県道-3m未満・その他・不明-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -4540,7 +4596,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-3m以上5.5m未満-通常部",
+      "id": "道路-都道府県道-3m以上5.5m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -4579,7 +4635,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-5.5m以上13m未満-通常部",
+      "id": "道路-都道府県道-5.5m以上13m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -4618,7 +4674,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-13m以上19.5m未満-通常部",
+      "id": "道路-都道府県道-13m以上19.5m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -4657,7 +4713,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-19.5m以上-通常部",
+      "id": "道路-都道府県道-19.5m以上-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -4696,7 +4752,7 @@
       }
     },
     {
-      "id": "道路-国道-通常部-通常部",
+      "id": "道路-国道-通常部-通常部8",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -4743,7 +4799,7 @@
       }
     },
     {
-      "id": "道路-国道-3m未満・その他・不明-通常部",
+      "id": "道路-国道-3m未満・その他・不明-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -4790,7 +4846,7 @@
       }
     },
     {
-      "id": "道路-国道-3m以上5.5m未満-通常部",
+      "id": "道路-国道-3m以上5.5m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -4829,7 +4885,7 @@
       }
     },
     {
-      "id": "道路-国道-5.5m以上13m未満-通常部",
+      "id": "道路-国道-5.5m以上13m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -4868,7 +4924,7 @@
       }
     },
     {
-      "id": "道路-国道-13m以上19.5m未満-通常部",
+      "id": "道路-国道-13m以上19.5m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -4907,7 +4963,7 @@
       }
     },
     {
-      "id": "道路-国道-19.5m以上-通常部",
+      "id": "道路-国道-19.5m以上-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -4946,7 +5002,7 @@
       }
     },
     {
-      "id": "道路-高速道路-通常部-通常部",
+      "id": "道路-高速道路-通常部-通常部8",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -4988,7 +5044,7 @@
       }
     },
     {
-      "id": "道路-高速道路-3m未満・その他・不明-通常部",
+      "id": "道路-高速道路-3m未満・その他・不明-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -5030,7 +5086,7 @@
       }
     },
     {
-      "id": "道路-高速道路-3m未満・その他・不明-通常部",
+      "id": "道路-高速道路-3m未満・その他・不明-通常部13",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -5083,7 +5139,7 @@
       }
     },
     {
-      "id": "道路-高速道路-3m以上5.5m未満-通常部",
+      "id": "道路-高速道路-3m以上5.5m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -5117,7 +5173,7 @@
       }
     },
     {
-      "id": "道路-高速道路-5.5m以上13m未満-通常部",
+      "id": "道路-高速道路-5.5m以上13m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -5151,7 +5207,7 @@
       }
     },
     {
-      "id": "道路-高速道路-13m以上19.5m未満-通常部",
+      "id": "道路-高速道路-13m以上19.5m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -5185,7 +5241,7 @@
       }
     },
     {
-      "id": "道路-高速道路-19.5m以上-通常部",
+      "id": "道路-高速道路-19.5m以上-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -5219,7 +5275,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-3m未満・その他・不明-通常部",
+      "id": "道路-その他・不明-3m未満・その他・不明-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -5292,7 +5348,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-3m以上5.5m未満-通常部",
+      "id": "道路-その他・不明-3m以上5.5m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -5357,7 +5413,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-5.5m以上13m未満-通常部",
+      "id": "道路-その他・不明-5.5m以上13m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -5422,7 +5478,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-13m以上19.5m未満-通常部",
+      "id": "道路-その他・不明-13m以上19.5m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -5487,7 +5543,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-19.5m以上-通常部",
+      "id": "道路-その他・不明-19.5m以上-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -5552,7 +5608,7 @@
       }
     },
     {
-      "id": "道路-庭園路-3m未満・その他・不明-通常部",
+      "id": "道路-庭園路-3m未満・その他・不明-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -5609,7 +5665,7 @@
       }
     },
     {
-      "id": "道路-庭園路-3m以上5.5m未満-通常部",
+      "id": "道路-庭園路-3m以上5.5m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -5658,7 +5714,7 @@
       }
     },
     {
-      "id": "道路-庭園路-5.5m以上13m未満-通常部",
+      "id": "道路-庭園路-5.5m以上13m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -5707,7 +5763,7 @@
       }
     },
     {
-      "id": "道路-庭園路-13m以上19.5m未満-通常部",
+      "id": "道路-庭園路-13m以上19.5m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -5756,7 +5812,7 @@
       }
     },
     {
-      "id": "道路-庭園路-19.5m以上-通常部",
+      "id": "道路-庭園路-19.5m以上-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -5805,7 +5861,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-3m未満・その他・不明-通常部",
+      "id": "道路-市区町村道-3m未満・その他・不明-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -5863,7 +5919,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-3m以上5.5m未満-通常部",
+      "id": "道路-市区町村道-3m以上5.5m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -5913,7 +5969,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-5.5m以上13m未満-通常部",
+      "id": "道路-市区町村道-5.5m以上13m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -5963,7 +6019,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-13m以上19.5m未満-通常部",
+      "id": "道路-市区町村道-13m以上19.5m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -6013,7 +6069,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-19.5m以上-通常部",
+      "id": "道路-市区町村道-19.5m以上-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -6063,7 +6119,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-3m未満・その他・不明-通常部",
+      "id": "道路-都道府県道-3m未満・その他・不明-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -6121,7 +6177,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-3m以上5.5m未満-通常部",
+      "id": "道路-都道府県道-3m以上5.5m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -6171,7 +6227,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-5.5m以上13m未満-通常部",
+      "id": "道路-都道府県道-5.5m以上13m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -6221,7 +6277,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-13m以上19.5m未満-通常部",
+      "id": "道路-都道府県道-13m以上19.5m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -6271,7 +6327,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-19.5m以上-通常部",
+      "id": "道路-都道府県道-19.5m以上-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -6321,7 +6377,7 @@
       }
     },
     {
-      "id": "道路-国道-3m未満・その他・不明-通常部",
+      "id": "道路-国道-3m未満・その他・不明-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -6379,7 +6435,7 @@
       }
     },
     {
-      "id": "道路-国道-3m以上5.5m未満-通常部",
+      "id": "道路-国道-3m以上5.5m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -6429,7 +6485,7 @@
       }
     },
     {
-      "id": "道路-国道-5.5m以上13m未満-通常部",
+      "id": "道路-国道-5.5m以上13m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -6479,7 +6535,7 @@
       }
     },
     {
-      "id": "道路-国道-13m以上19.5m未満-通常部",
+      "id": "道路-国道-13m以上19.5m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -6529,7 +6585,7 @@
       }
     },
     {
-      "id": "道路-国道-19.5m以上-通常部",
+      "id": "道路-国道-19.5m以上-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -6579,7 +6635,7 @@
       }
     },
     {
-      "id": "道路-高速道路-3m未満・その他・不明-通常部",
+      "id": "道路-高速道路-3m未満・その他・不明-通常部13",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -6632,7 +6688,7 @@
       }
     },
     {
-      "id": "道路-高速道路-3m以上5.5m未満-通常部",
+      "id": "道路-高速道路-3m以上5.5m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -6677,7 +6733,7 @@
       }
     },
     {
-      "id": "道路-高速道路-5.5m以上13m未満-通常部",
+      "id": "道路-高速道路-5.5m以上13m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -6722,7 +6778,7 @@
       }
     },
     {
-      "id": "道路-高速道路-13m以上19.5m未満-通常部",
+      "id": "道路-高速道路-13m以上19.5m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -6767,7 +6823,7 @@
       }
     },
     {
-      "id": "道路-高速道路-19.5m以上-通常部",
+      "id": "道路-高速道路-19.5m以上-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -6812,7 +6868,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-3m以上5.5m未満-通常部",
+      "id": "道路-その他・不明-3m以上5.5m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -6877,7 +6933,7 @@
       }
     },
     {
-      "id": "道路-雪覆い",
+      "id": "道路-雪覆い11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -6925,7 +6981,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-5.5m以上13m未満-通常部",
+      "id": "道路-その他・不明-5.5m以上13m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -6990,7 +7046,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-13m以上19.5m未満-通常部",
+      "id": "道路-その他・不明-13m以上19.5m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -7055,7 +7111,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-19.5m以上-通常部",
+      "id": "道路-その他・不明-19.5m以上-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -7120,7 +7176,7 @@
       }
     },
     {
-      "id": "道路-石段",
+      "id": "道路-石段14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -7149,7 +7205,7 @@
       }
     },
     {
-      "id": "道路-石段",
+      "id": "道路-石段14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -7182,7 +7238,7 @@
       }
     },
     {
-      "id": "道路-庭園路-3m未満・その他・不明-通常部",
+      "id": "道路-庭園路-3m未満・その他・不明-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -7235,7 +7291,7 @@
       }
     },
     {
-      "id": "道路-庭園路-3m以上5.5m未満-通常部",
+      "id": "道路-庭園路-3m以上5.5m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -7280,7 +7336,7 @@
       }
     },
     {
-      "id": "道路-庭園路-5.5m以上13m未満-通常部",
+      "id": "道路-庭園路-5.5m以上13m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -7325,7 +7381,7 @@
       }
     },
     {
-      "id": "道路-庭園路-13m以上19.5m未満-通常部",
+      "id": "道路-庭園路-13m以上19.5m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -7370,7 +7426,7 @@
       }
     },
     {
-      "id": "道路-庭園路-19.5m以上-通常部",
+      "id": "道路-庭園路-19.5m以上-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -7415,7 +7471,7 @@
       }
     },
     {
-      "id": "道路-徒歩道-通常部",
+      "id": "道路-徒歩道-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -7448,7 +7504,7 @@
       }
     },
     {
-      "id": "道路-トンネル内の道路-3m未満・その他・不明",
+      "id": "道路-トンネル内の道路-3m未満・その他・不明14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -7501,7 +7557,7 @@
       }
     },
     {
-      "id": "道路-トンネル内の道路-3m未満・その他・不明",
+      "id": "道路-トンネル内の道路-3m未満・その他・不明14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -7554,7 +7610,7 @@
       }
     },
     {
-      "id": "道路-トンネル内の道路-3m以上5.5m未満",
+      "id": "道路-トンネル内の道路-3m以上5.5m未満14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -7599,7 +7655,7 @@
       }
     },
     {
-      "id": "道路-トンネル内の道路-3m以上5.5m未満",
+      "id": "道路-トンネル内の道路-3m以上5.5m未満14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -7644,7 +7700,7 @@
       }
     },
     {
-      "id": "道路-トンネル内の道路-5.5m以上13m未満",
+      "id": "道路-トンネル内の道路-5.5m以上13m未満14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -7689,7 +7745,7 @@
       }
     },
     {
-      "id": "道路-トンネル内の道路-5.5m以上13m未満",
+      "id": "道路-トンネル内の道路-5.5m以上13m未満14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -7734,7 +7790,7 @@
       }
     },
     {
-      "id": "道路-トンネル内の道路-13m以上19.5m未満",
+      "id": "道路-トンネル内の道路-13m以上19.5m未満14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -7779,7 +7835,7 @@
       }
     },
     {
-      "id": "道路-トンネル内の道路-13m以上19.5m未満",
+      "id": "道路-トンネル内の道路-13m以上19.5m未満14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -7824,7 +7880,7 @@
       }
     },
     {
-      "id": "道路-トンネル内の道路-19.5m以上",
+      "id": "道路-トンネル内の道路-19.5m以上14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -7869,7 +7925,7 @@
       }
     },
     {
-      "id": "道路-トンネル内の道路-19.5m以上",
+      "id": "道路-トンネル内の道路-19.5m以上14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -7914,7 +7970,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-3m以上5.5m未満-通常部",
+      "id": "道路-市区町村道-3m以上5.5m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -7964,7 +8020,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-5.5m以上13m未満-通常部",
+      "id": "道路-市区町村道-5.5m以上13m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -8014,7 +8070,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-13m以上19.5m未満-通常部",
+      "id": "道路-市区町村道-13m以上19.5m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -8064,7 +8120,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-19.5m以上-通常部",
+      "id": "道路-市区町村道-19.5m以上-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -8114,7 +8170,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-3m未満・その他・不明-通常部",
+      "id": "道路-都道府県道-3m未満・その他・不明-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -8172,7 +8228,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-3m以上5.5m未満-通常部",
+      "id": "道路-都道府県道-3m以上5.5m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -8222,7 +8278,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-5.5m以上13m未満-通常部",
+      "id": "道路-都道府県道-5.5m以上13m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -8272,7 +8328,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-13m以上19.5m未満-通常部",
+      "id": "道路-都道府県道-13m以上19.5m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -8322,7 +8378,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-19.5m以上-通常部",
+      "id": "道路-都道府県道-19.5m以上-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -8372,7 +8428,7 @@
       }
     },
     {
-      "id": "道路-国道-3m未満・その他・不明-通常部",
+      "id": "道路-国道-3m未満・その他・不明-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -8430,7 +8486,7 @@
       }
     },
     {
-      "id": "道路-国道-3m以上5.5m未満-通常部",
+      "id": "道路-国道-3m以上5.5m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -8480,7 +8536,7 @@
       }
     },
     {
-      "id": "道路-国道-5.5m以上13m未満-通常部",
+      "id": "道路-国道-5.5m以上13m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -8530,7 +8586,7 @@
       }
     },
     {
-      "id": "道路-国道-13m以上19.5m未満-通常部",
+      "id": "道路-国道-13m以上19.5m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -8580,7 +8636,7 @@
       }
     },
     {
-      "id": "道路-国道-19.5m以上-通常部",
+      "id": "道路-国道-19.5m以上-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -8630,7 +8686,7 @@
       }
     },
     {
-      "id": "鉄道-地下鉄-トンネル",
+      "id": "鉄道-地下鉄-トンネル14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -8698,7 +8754,7 @@
       }
     },
     {
-      "id": "鉄道-JR-橋梁",
+      "id": "鉄道-JR-橋梁14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -8767,7 +8823,7 @@
       }
     },
     {
-      "id": "鉄道-JR-橋梁",
+      "id": "鉄道-JR-橋梁14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -8837,7 +8893,7 @@
       }
     },
     {
-      "id": "鉄道-JR-橋梁",
+      "id": "鉄道-JR-橋梁14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -8907,7 +8963,7 @@
       }
     },
     {
-      "id": "鉄道-JR-橋梁",
+      "id": "鉄道-JR-橋梁14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -8976,7 +9032,7 @@
       }
     },
     {
-      "id": "鉄道-JR-橋梁",
+      "id": "鉄道-JR-橋梁14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -9045,7 +9101,7 @@
       }
     },
     {
-      "id": "鉄道-JR-橋梁",
+      "id": "鉄道-JR-橋梁14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -9118,7 +9174,7 @@
       }
     },
     {
-      "id": "鉄道-JR以外-橋梁",
+      "id": "鉄道-JR以外-橋梁14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -9187,7 +9243,7 @@
       }
     },
     {
-      "id": "鉄道-JR以外-橋梁",
+      "id": "鉄道-JR以外-橋梁14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -9257,7 +9313,7 @@
       }
     },
     {
-      "id": "鉄道-JR以外-橋梁",
+      "id": "鉄道-JR以外-橋梁14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -9327,7 +9383,7 @@
       }
     },
     {
-      "id": "鉄道-JR以外-橋梁",
+      "id": "鉄道-JR以外-橋梁14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -9396,7 +9452,7 @@
       }
     },
     {
-      "id": "鉄道-地下鉄-橋梁",
+      "id": "鉄道-地下鉄-橋梁14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -9452,7 +9508,7 @@
       }
     },
     {
-      "id": "鉄道-地下鉄-橋梁",
+      "id": "鉄道-地下鉄-橋梁14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -9509,7 +9565,7 @@
       }
     },
     {
-      "id": "鉄道-地下鉄-橋梁",
+      "id": "鉄道-地下鉄-橋梁14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -9566,7 +9622,7 @@
       }
     },
     {
-      "id": "鉄道-地下鉄-橋梁",
+      "id": "鉄道-地下鉄-橋梁14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -9622,7 +9678,7 @@
       }
     },
     {
-      "id": "鉄道-側線-通常部",
+      "id": "鉄道-側線-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -9662,7 +9718,7 @@
       }
     },
     {
-      "id": "鉄道-特殊鉄道-通常部",
+      "id": "鉄道-特殊鉄道-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -9699,7 +9755,7 @@
       }
     },
     {
-      "id": "鉄道-特殊鉄道-通常部",
+      "id": "鉄道-特殊鉄道-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -9732,7 +9788,7 @@
       }
     },
     {
-      "id": "鉄道-索道",
+      "id": "鉄道-索道14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -9765,7 +9821,7 @@
       }
     },
     {
-      "id": "鉄道-路面",
+      "id": "鉄道-路面14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -9798,7 +9854,7 @@
       }
     },
     {
-      "id": "鉄道-JR以外-トンネル",
+      "id": "鉄道-JR以外-トンネル14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -9879,7 +9935,7 @@
       }
     },
     {
-      "id": "鉄道-JR以外-通常部-単線",
+      "id": "鉄道-JR以外-通常部-単線14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -9961,7 +10017,7 @@
       }
     },
     {
-      "id": "鉄道-JR以外-通常部-単線",
+      "id": "鉄道-JR以外-通常部-単線14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -10047,7 +10103,7 @@
       }
     },
     {
-      "id": "鉄道-地下鉄-通常部-単線",
+      "id": "鉄道-地下鉄-通常部-単線14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -10116,7 +10172,7 @@
       }
     },
     {
-      "id": "鉄道-地下鉄-通常部-単線",
+      "id": "鉄道-地下鉄-通常部-単線14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -10189,7 +10245,7 @@
       }
     },
     {
-      "id": "鉄道-JR以外-通常部-複線",
+      "id": "鉄道-JR以外-通常部-複線14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -10271,7 +10327,7 @@
       }
     },
     {
-      "id": "鉄道-JR以外-通常部-複線",
+      "id": "鉄道-JR以外-通常部-複線14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -10359,7 +10415,7 @@
       }
     },
     {
-      "id": "鉄道-地下鉄-通常部-複線",
+      "id": "鉄道-地下鉄-通常部-複線14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -10428,7 +10484,7 @@
       }
     },
     {
-      "id": "鉄道-地下鉄-通常部-複線",
+      "id": "鉄道-地下鉄-通常部-複線14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -10503,7 +10559,7 @@
       }
     },
     {
-      "id": "鉄道-JR-トンネル",
+      "id": "鉄道-JR-トンネル14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -10584,7 +10640,7 @@
       }
     },
     {
-      "id": "鉄道-JR-通常部-単線",
+      "id": "鉄道-JR-通常部-単線14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -10666,7 +10722,7 @@
       }
     },
     {
-      "id": "鉄道-JR-通常部-単線",
+      "id": "鉄道-JR-通常部-単線14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -10748,7 +10804,7 @@
       }
     },
     {
-      "id": "鉄道-JR-通常部-単線",
+      "id": "鉄道-JR-通常部-単線14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -10834,7 +10890,7 @@
       }
     },
     {
-      "id": "鉄道-JR-通常部-複線",
+      "id": "鉄道-JR-通常部-複線14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -10916,7 +10972,7 @@
       }
     },
     {
-      "id": "鉄道-JR-通常部-複線",
+      "id": "鉄道-JR-通常部-複線14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -10998,7 +11054,7 @@
       }
     },
     {
-      "id": "鉄道-JR-通常部-複線",
+      "id": "鉄道-JR-通常部-複線14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -11086,7 +11142,7 @@
       }
     },
     {
-      "id": "鉄道-地下鉄駅",
+      "id": "鉄道-地下鉄駅14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -11163,7 +11219,7 @@
       }
     },
     {
-      "id": "鉄道-地下鉄駅",
+      "id": "鉄道-地下鉄駅14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -11240,7 +11296,7 @@
       }
     },
     {
-      "id": "鉄道-駅",
+      "id": "鉄道-駅14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -11285,7 +11341,7 @@
       }
     },
     {
-      "id": "鉄道-駅",
+      "id": "鉄道-駅14",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -11330,7 +11386,7 @@
       }
     },
     {
-      "id": "道路-高速道路-3m未満・その他・不明-通常部",
+      "id": "道路-高速道路-3m未満・その他・不明-通常部13",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -11383,7 +11439,7 @@
       }
     },
     {
-      "id": "道路-高速道路-3m以上5.5m未満-通常部",
+      "id": "道路-高速道路-3m以上5.5m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -11428,7 +11484,7 @@
       }
     },
     {
-      "id": "道路-高速道路-5.5m以上13m未満-通常部",
+      "id": "道路-高速道路-5.5m以上13m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -11473,7 +11529,7 @@
       }
     },
     {
-      "id": "道路-高速道路-13m以上19.5m未満-通常部",
+      "id": "道路-高速道路-13m以上19.5m未満-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -11518,7 +11574,7 @@
       }
     },
     {
-      "id": "道路-高速道路-19.5m以上-通常部",
+      "id": "道路-高速道路-19.5m以上-通常部14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -11563,7 +11619,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-3m未満・その他・不明-橋・高架",
+      "id": "道路-その他・不明-3m未満・その他・不明-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -11636,7 +11692,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-3m以上5.5m未満-橋・高架",
+      "id": "道路-その他・不明-3m以上5.5m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -11701,7 +11757,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-5.5m以上13m未満-橋・高架",
+      "id": "道路-その他・不明-5.5m以上13m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -11766,7 +11822,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-13m以上19.5m未満-橋・高架",
+      "id": "道路-その他・不明-13m以上19.5m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -11831,7 +11887,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-19.5m以上-橋・高架",
+      "id": "道路-その他・不明-19.5m以上-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -11896,7 +11952,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-3m未満・その他・不明-橋・高架",
+      "id": "道路-市区町村道-3m未満・その他・不明-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -11954,7 +12010,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-3m以上5.5m未満-橋・高架",
+      "id": "道路-市区町村道-3m以上5.5m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -12004,7 +12060,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-5.5m以上13m未満-橋・高架",
+      "id": "道路-市区町村道-5.5m以上13m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -12054,7 +12110,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-13m以上19.5m未満-橋・高架",
+      "id": "道路-市区町村道-13m以上19.5m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -12104,7 +12160,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-19.5m以上-橋・高架",
+      "id": "道路-市区町村道-19.5m以上-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -12154,7 +12210,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-3m未満・その他・不明-橋・高架",
+      "id": "道路-都道府県道-3m未満・その他・不明-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -12212,7 +12268,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-3m以上5.5m未満-橋・高架",
+      "id": "道路-都道府県道-3m以上5.5m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -12262,7 +12318,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-5.5m以上13m未満-橋・高架",
+      "id": "道路-都道府県道-5.5m以上13m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -12312,7 +12368,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-13m以上19.5m未満-橋・高架",
+      "id": "道路-都道府県道-13m以上19.5m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -12362,7 +12418,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-19.5m以上-橋・高架",
+      "id": "道路-都道府県道-19.5m以上-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -12412,7 +12468,7 @@
       }
     },
     {
-      "id": "道路-国道-3m未満・その他・不明-橋・高架",
+      "id": "道路-国道-3m未満・その他・不明-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -12470,7 +12526,7 @@
       }
     },
     {
-      "id": "道路-国道-3m以上5.5m未満-橋・高架",
+      "id": "道路-国道-3m以上5.5m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -12520,7 +12576,7 @@
       }
     },
     {
-      "id": "道路-国道-5.5m以上13m未満-橋・高架",
+      "id": "道路-国道-5.5m以上13m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -12570,7 +12626,7 @@
       }
     },
     {
-      "id": "道路-国道-13m以上19.5m未満-橋・高架",
+      "id": "道路-国道-13m以上19.5m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -12620,7 +12676,7 @@
       }
     },
     {
-      "id": "道路-国道-19.5m以上-橋・高架",
+      "id": "道路-国道-19.5m以上-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -12670,7 +12726,7 @@
       }
     },
     {
-      "id": "道路-高速道路-3m未満・その他・不明-橋・高架",
+      "id": "道路-高速道路-3m未満・その他・不明-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -12723,7 +12779,7 @@
       }
     },
     {
-      "id": "道路-高速道路-3m以上5.5m未満-橋・高架",
+      "id": "道路-高速道路-3m以上5.5m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -12768,7 +12824,7 @@
       }
     },
     {
-      "id": "道路-高速道路-5.5m以上13m未満-橋・高架",
+      "id": "道路-高速道路-5.5m以上13m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -12813,7 +12869,7 @@
       }
     },
     {
-      "id": "道路-高速道路-13m以上19.5m未満-橋・高架",
+      "id": "道路-高速道路-13m以上19.5m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -12858,7 +12914,7 @@
       }
     },
     {
-      "id": "道路-高速道路-19.5m以上-橋・高架",
+      "id": "道路-高速道路-19.5m以上-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -12903,7 +12959,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-3m以上5.5m未満-橋・高架",
+      "id": "道路-その他・不明-3m以上5.5m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -12968,7 +13024,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-5.5m以上13m未満-橋・高架",
+      "id": "道路-その他・不明-5.5m以上13m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -13033,7 +13089,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-13m以上19.5m未満-橋・高架",
+      "id": "道路-その他・不明-13m以上19.5m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -13098,7 +13154,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-19.5m以上-橋・高架",
+      "id": "道路-その他・不明-19.5m以上-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -13163,7 +13219,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-3m未満・その他・不明-橋・高架",
+      "id": "道路-市区町村道-3m未満・その他・不明-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -13221,7 +13277,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-3m以上5.5m未満-橋・高架",
+      "id": "道路-市区町村道-3m以上5.5m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -13271,7 +13327,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-5.5m以上13m未満-橋・高架",
+      "id": "道路-市区町村道-5.5m以上13m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -13321,7 +13377,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-13m以上19.5m未満-橋・高架",
+      "id": "道路-市区町村道-13m以上19.5m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -13371,7 +13427,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-19.5m以上-橋・高架",
+      "id": "道路-市区町村道-19.5m以上-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -13421,7 +13477,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-3m未満・その他・不明-橋・高架",
+      "id": "道路-都道府県道-3m未満・その他・不明-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -13479,7 +13535,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-3m以上5.5m未満-橋・高架",
+      "id": "道路-都道府県道-3m以上5.5m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -13529,7 +13585,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-5.5m以上13m未満-橋・高架",
+      "id": "道路-都道府県道-5.5m以上13m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -13579,7 +13635,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-13m以上19.5m未満-橋・高架",
+      "id": "道路-都道府県道-13m以上19.5m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -13629,7 +13685,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-19.5m以上-橋・高架",
+      "id": "道路-都道府県道-19.5m以上-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -13679,7 +13735,7 @@
       }
     },
     {
-      "id": "道路-国道-3m未満・その他・不明-橋・高架",
+      "id": "道路-国道-3m未満・その他・不明-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -13737,7 +13793,7 @@
       }
     },
     {
-      "id": "道路-国道-3m以上5.5m未満-橋・高架",
+      "id": "道路-国道-3m以上5.5m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -13787,7 +13843,7 @@
       }
     },
     {
-      "id": "道路-国道-5.5m以上13m未満-橋・高架",
+      "id": "道路-国道-5.5m以上13m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -13837,7 +13893,7 @@
       }
     },
     {
-      "id": "道路-国道-13m以上19.5m未満-橋・高架",
+      "id": "道路-国道-13m以上19.5m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -13887,7 +13943,7 @@
       }
     },
     {
-      "id": "道路-国道-19.5m以上-橋・高架",
+      "id": "道路-国道-19.5m以上-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -13937,7 +13993,7 @@
       }
     },
     {
-      "id": "道路-高速道路-3m未満・その他・不明-橋・高架",
+      "id": "道路-高速道路-3m未満・その他・不明-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -13990,7 +14046,7 @@
       }
     },
     {
-      "id": "道路-高速道路-3m以上5.5m未満-橋・高架",
+      "id": "道路-高速道路-3m以上5.5m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -14035,7 +14091,7 @@
       }
     },
     {
-      "id": "道路-高速道路-5.5m以上13m未満-橋・高架",
+      "id": "道路-高速道路-5.5m以上13m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -14080,7 +14136,7 @@
       }
     },
     {
-      "id": "道路-高速道路-13m以上19.5m未満-橋・高架",
+      "id": "道路-高速道路-13m以上19.5m未満-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -14125,7 +14181,7 @@
       }
     },
     {
-      "id": "道路-高速道路-19.5m以上-橋・高架",
+      "id": "道路-高速道路-19.5m以上-橋・高架14",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -14170,7 +14226,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-3m未満・その他・不明-トンネル",
+      "id": "道路-その他・不明-3m未満・その他・不明-トンネル13",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -14232,7 +14288,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-3m未満・その他・不明-通常部",
+      "id": "道路-その他・不明-3m未満・その他・不明-通常部13",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -14294,7 +14350,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-3m未満・その他・不明-橋・高架",
+      "id": "道路-その他・不明-3m未満・その他・不明-橋・高架13",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -14356,7 +14412,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-3m以上5.5m未満-トンネル",
+      "id": "道路-その他・不明-3m以上5.5m未満-トンネル13",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -14410,7 +14466,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-3m以上5.5m未満-通常部",
+      "id": "道路-その他・不明-3m以上5.5m未満-通常部13",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -14464,7 +14520,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-3m以上5.5m未満-橋・高架",
+      "id": "道路-その他・不明-3m以上5.5m未満-橋・高架13",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -14518,7 +14574,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-5.5m以上13m未満-トンネル",
+      "id": "道路-その他・不明-5.5m以上13m未満-トンネル13",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -14572,7 +14628,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-5.5m以上13m未満-通常部",
+      "id": "道路-その他・不明-5.5m以上13m未満-通常部13",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -14626,7 +14682,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-5.5m以上13m未満-橋・高架",
+      "id": "道路-その他・不明-5.5m以上13m未満-橋・高架13",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -14680,7 +14736,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-13m以上19.5m未満-トンネル",
+      "id": "道路-その他・不明-13m以上19.5m未満-トンネル13",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -14734,7 +14790,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-13m以上19.5m未満-通常部",
+      "id": "道路-その他・不明-13m以上19.5m未満-通常部13",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -14788,7 +14844,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-13m以上19.5m未満-橋・高架",
+      "id": "道路-その他・不明-13m以上19.5m未満-橋・高架13",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -14842,7 +14898,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-19.5m以上-トンネル",
+      "id": "道路-その他・不明-19.5m以上-トンネル13",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -14896,7 +14952,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-19.5m以上-通常部",
+      "id": "道路-その他・不明-19.5m以上-通常部13",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -14950,7 +15006,7 @@
       }
     },
     {
-      "id": "道路-その他・不明-19.5m以上-橋・高架",
+      "id": "道路-その他・不明-19.5m以上-橋・高架13",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -15004,7 +15060,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-3m未満・その他・不明-トンネル",
+      "id": "道路-市区町村道-3m未満・その他・不明-トンネル11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -15051,7 +15107,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-3m未満・その他・不明-通常部",
+      "id": "道路-市区町村道-3m未満・その他・不明-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -15098,7 +15154,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-3m未満・その他・不明-橋・高架",
+      "id": "道路-市区町村道-3m未満・その他・不明-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -15145,7 +15201,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-3m以上5.5m未満-トンネル",
+      "id": "道路-市区町村道-3m以上5.5m未満-トンネル11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -15184,7 +15240,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-3m以上5.5m未満-通常部",
+      "id": "道路-市区町村道-3m以上5.5m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -15223,7 +15279,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-3m以上5.5m未満-橋・高架",
+      "id": "道路-市区町村道-3m以上5.5m未満-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -15262,7 +15318,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-5.5m以上13m未満-トンネル",
+      "id": "道路-市区町村道-5.5m以上13m未満-トンネル11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -15301,7 +15357,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-5.5m以上13m未満-通常部",
+      "id": "道路-市区町村道-5.5m以上13m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -15340,7 +15396,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-5.5m以上13m未満-橋・高架",
+      "id": "道路-市区町村道-5.5m以上13m未満-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -15379,7 +15435,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-13m以上19.5m未満-トンネル",
+      "id": "道路-市区町村道-13m以上19.5m未満-トンネル11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -15418,7 +15474,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-13m以上19.5m未満-通常部",
+      "id": "道路-市区町村道-13m以上19.5m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -15457,7 +15513,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-13m以上19.5m未満-橋・高架",
+      "id": "道路-市区町村道-13m以上19.5m未満-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -15496,7 +15552,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-19.5m以上-トンネル",
+      "id": "道路-市区町村道-19.5m以上-トンネル11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -15535,7 +15591,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-19.5m以上-通常部",
+      "id": "道路-市区町村道-19.5m以上-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -15574,7 +15630,7 @@
       }
     },
     {
-      "id": "道路-市区町村道-19.5m以上-橋・高架",
+      "id": "道路-市区町村道-19.5m以上-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -15613,7 +15669,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-通常部-トンネル",
+      "id": "道路-都道府県道-通常部-トンネル8",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -15647,54 +15703,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-通常部-通常部",
-      "type": "line",
-      "source": "v",
-      "source-layer": "road",
-      "minzoom": 8,
-      "maxzoom": 11,
-      "filter": [
-        "all",
-        [
-          "any",
-          [
-            "==",
-            "ftCode",
-            2701
-          ],
-          [
-            "==",
-            "ftCode",
-            2702
-          ],
-          [
-            "==",
-            "ftCode",
-            2703
-          ]
-        ],
-        [
-          "==",
-          "rdCtg",
-          1
-        ],
-        [
-          "!=",
-          "motorway",
-          1
-        ]
-      ],
-      "layout": {
-        "line-cap": "square",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "rgba(100,100,100,1)",
-        "line-width": 3
-      }
-    },
-    {
-      "id": "道路-都道府県道-通常部-通常部",
+      "id": "道路-都道府県道-通常部-通常部8",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -15736,12 +15745,59 @@
         "line-join": "round"
       },
       "paint": {
+        "line-color": "rgba(100,100,100,1)",
+        "line-width": 3
+      }
+    },
+    {
+      "id": "道路-都道府県道-通常部-通常部8",
+      "type": "line",
+      "source": "v",
+      "source-layer": "road",
+      "minzoom": 8,
+      "maxzoom": 11,
+      "filter": [
+        "all",
+        [
+          "any",
+          [
+            "==",
+            "ftCode",
+            2701
+          ],
+          [
+            "==",
+            "ftCode",
+            2702
+          ],
+          [
+            "==",
+            "ftCode",
+            2703
+          ]
+        ],
+        [
+          "==",
+          "rdCtg",
+          1
+        ],
+        [
+          "!=",
+          "motorway",
+          1
+        ]
+      ],
+      "layout": {
+        "line-cap": "square",
+        "line-join": "round"
+      },
+      "paint": {
         "line-color": "rgba(255,255,0,1)",
         "line-width": 2
       }
     },
     {
-      "id": "道路-都道府県道-3m未満・その他・不明-トンネル",
+      "id": "道路-都道府県道-3m未満・その他・不明-トンネル11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -15788,7 +15844,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-3m未満・その他・不明-通常部",
+      "id": "道路-都道府県道-3m未満・その他・不明-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -15835,7 +15891,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-3m未満・その他・不明-通常部",
+      "id": "道路-都道府県道-3m未満・その他・不明-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -15882,7 +15938,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-3m未満・その他・不明-橋・高架",
+      "id": "道路-都道府県道-3m未満・その他・不明-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -15929,7 +15985,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-3m未満・その他・不明-橋・高架",
+      "id": "道路-都道府県道-3m未満・その他・不明-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -15976,7 +16032,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-3m以上5.5m未満-トンネル",
+      "id": "道路-都道府県道-3m以上5.5m未満-トンネル11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -16015,7 +16071,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-3m以上5.5m未満-通常部",
+      "id": "道路-都道府県道-3m以上5.5m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -16054,7 +16110,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-3m以上5.5m未満-通常部",
+      "id": "道路-都道府県道-3m以上5.5m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -16093,7 +16149,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-3m以上5.5m未満-橋・高架",
+      "id": "道路-都道府県道-3m以上5.5m未満-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -16132,7 +16188,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-3m以上5.5m未満-橋・高架",
+      "id": "道路-都道府県道-3m以上5.5m未満-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -16171,7 +16227,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-5.5m以上13m未満-トンネル",
+      "id": "道路-都道府県道-5.5m以上13m未満-トンネル11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -16210,7 +16266,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-5.5m以上13m未満-通常部",
+      "id": "道路-都道府県道-5.5m以上13m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -16249,7 +16305,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-5.5m以上13m未満-通常部",
+      "id": "道路-都道府県道-5.5m以上13m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -16288,7 +16344,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-5.5m以上13m未満-橋・高架",
+      "id": "道路-都道府県道-5.5m以上13m未満-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -16327,7 +16383,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-5.5m以上13m未満-橋・高架",
+      "id": "道路-都道府県道-5.5m以上13m未満-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -16366,7 +16422,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-13m以上19.5m未満-トンネル",
+      "id": "道路-都道府県道-13m以上19.5m未満-トンネル11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -16405,7 +16461,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-13m以上19.5m未満-通常部",
+      "id": "道路-都道府県道-13m以上19.5m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -16444,7 +16500,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-13m以上19.5m未満-通常部",
+      "id": "道路-都道府県道-13m以上19.5m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -16483,7 +16539,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-13m以上19.5m未満-橋・高架",
+      "id": "道路-都道府県道-13m以上19.5m未満-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -16522,7 +16578,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-13m以上19.5m未満-橋・高架",
+      "id": "道路-都道府県道-13m以上19.5m未満-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -16561,7 +16617,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-19.5m以上-トンネル",
+      "id": "道路-都道府県道-19.5m以上-トンネル11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -16600,7 +16656,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-19.5m以上-通常部",
+      "id": "道路-都道府県道-19.5m以上-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -16639,7 +16695,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-19.5m以上-通常部",
+      "id": "道路-都道府県道-19.5m以上-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -16678,7 +16734,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-19.5m以上-橋・高架",
+      "id": "道路-都道府県道-19.5m以上-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -16717,7 +16773,7 @@
       }
     },
     {
-      "id": "道路-都道府県道-19.5m以上-橋・高架",
+      "id": "道路-都道府県道-19.5m以上-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -16756,7 +16812,7 @@
       }
     },
     {
-      "id": "道路-国道-通常部-トンネル",
+      "id": "道路-国道-通常部-トンネル8",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -16790,54 +16846,7 @@
       }
     },
     {
-      "id": "道路-国道-通常部-通常部",
-      "type": "line",
-      "source": "v",
-      "source-layer": "road",
-      "minzoom": 8,
-      "maxzoom": 11,
-      "filter": [
-        "all",
-        [
-          "any",
-          [
-            "==",
-            "ftCode",
-            2701
-          ],
-          [
-            "==",
-            "ftCode",
-            2702
-          ],
-          [
-            "==",
-            "ftCode",
-            2703
-          ]
-        ],
-        [
-          "==",
-          "rdCtg",
-          0
-        ],
-        [
-          "!=",
-          "motorway",
-          1
-        ]
-      ],
-      "layout": {
-        "line-cap": "square",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "rgba(100,100,100,1)",
-        "line-width": 3
-      }
-    },
-    {
-      "id": "道路-国道-通常部-通常部",
+      "id": "道路-国道-通常部-通常部8",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -16879,12 +16888,59 @@
         "line-join": "round"
       },
       "paint": {
+        "line-color": "rgba(100,100,100,1)",
+        "line-width": 3
+      }
+    },
+    {
+      "id": "道路-国道-通常部-通常部8",
+      "type": "line",
+      "source": "v",
+      "source-layer": "road",
+      "minzoom": 8,
+      "maxzoom": 11,
+      "filter": [
+        "all",
+        [
+          "any",
+          [
+            "==",
+            "ftCode",
+            2701
+          ],
+          [
+            "==",
+            "ftCode",
+            2702
+          ],
+          [
+            "==",
+            "ftCode",
+            2703
+          ]
+        ],
+        [
+          "==",
+          "rdCtg",
+          0
+        ],
+        [
+          "!=",
+          "motorway",
+          1
+        ]
+      ],
+      "layout": {
+        "line-cap": "square",
+        "line-join": "round"
+      },
+      "paint": {
         "line-color": "rgba(235,130,120,1)",
         "line-width": 2
       }
     },
     {
-      "id": "道路-国道-3m未満・その他・不明-トンネル",
+      "id": "道路-国道-3m未満・その他・不明-トンネル11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -16931,7 +16987,7 @@
       }
     },
     {
-      "id": "道路-国道-3m未満・その他・不明-通常部",
+      "id": "道路-国道-3m未満・その他・不明-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -16978,7 +17034,7 @@
       }
     },
     {
-      "id": "道路-国道-3m未満・その他・不明-通常部",
+      "id": "道路-国道-3m未満・その他・不明-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -17025,7 +17081,7 @@
       }
     },
     {
-      "id": "道路-国道-3m未満・その他・不明-橋・高架",
+      "id": "道路-国道-3m未満・その他・不明-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -17072,7 +17128,7 @@
       }
     },
     {
-      "id": "道路-国道-3m未満・その他・不明-橋・高架",
+      "id": "道路-国道-3m未満・その他・不明-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -17119,7 +17175,7 @@
       }
     },
     {
-      "id": "道路-国道-3m以上5.5m未満-トンネル",
+      "id": "道路-国道-3m以上5.5m未満-トンネル11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -17158,7 +17214,7 @@
       }
     },
     {
-      "id": "道路-国道-3m以上5.5m未満-通常部",
+      "id": "道路-国道-3m以上5.5m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -17197,7 +17253,7 @@
       }
     },
     {
-      "id": "道路-国道-3m以上5.5m未満-通常部",
+      "id": "道路-国道-3m以上5.5m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -17236,7 +17292,7 @@
       }
     },
     {
-      "id": "道路-国道-3m以上5.5m未満-橋・高架",
+      "id": "道路-国道-3m以上5.5m未満-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -17275,7 +17331,7 @@
       }
     },
     {
-      "id": "道路-国道-3m以上5.5m未満-橋・高架",
+      "id": "道路-国道-3m以上5.5m未満-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -17314,7 +17370,7 @@
       }
     },
     {
-      "id": "道路-国道-5.5m以上13m未満-トンネル",
+      "id": "道路-国道-5.5m以上13m未満-トンネル11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -17353,7 +17409,7 @@
       }
     },
     {
-      "id": "道路-国道-5.5m以上13m未満-通常部",
+      "id": "道路-国道-5.5m以上13m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -17392,7 +17448,7 @@
       }
     },
     {
-      "id": "道路-国道-5.5m以上13m未満-通常部",
+      "id": "道路-国道-5.5m以上13m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -17431,7 +17487,7 @@
       }
     },
     {
-      "id": "道路-国道-5.5m以上13m未満-橋・高架",
+      "id": "道路-国道-5.5m以上13m未満-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -17470,7 +17526,7 @@
       }
     },
     {
-      "id": "道路-国道-5.5m以上13m未満-橋・高架",
+      "id": "道路-国道-5.5m以上13m未満-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -17509,7 +17565,7 @@
       }
     },
     {
-      "id": "道路-国道-13m以上19.5m未満-トンネル",
+      "id": "道路-国道-13m以上19.5m未満-トンネル11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -17548,7 +17604,7 @@
       }
     },
     {
-      "id": "道路-国道-13m以上19.5m未満-通常部",
+      "id": "道路-国道-13m以上19.5m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -17587,7 +17643,7 @@
       }
     },
     {
-      "id": "道路-国道-13m以上19.5m未満-通常部",
+      "id": "道路-国道-13m以上19.5m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -17626,7 +17682,7 @@
       }
     },
     {
-      "id": "道路-国道-13m以上19.5m未満-橋・高架",
+      "id": "道路-国道-13m以上19.5m未満-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -17665,7 +17721,7 @@
       }
     },
     {
-      "id": "道路-国道-13m以上19.5m未満-橋・高架",
+      "id": "道路-国道-13m以上19.5m未満-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -17704,7 +17760,7 @@
       }
     },
     {
-      "id": "道路-国道-19.5m以上-トンネル",
+      "id": "道路-国道-19.5m以上-トンネル11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -17743,7 +17799,7 @@
       }
     },
     {
-      "id": "道路-国道-19.5m以上-通常部",
+      "id": "道路-国道-19.5m以上-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -17782,7 +17838,7 @@
       }
     },
     {
-      "id": "道路-国道-19.5m以上-通常部",
+      "id": "道路-国道-19.5m以上-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -17821,7 +17877,7 @@
       }
     },
     {
-      "id": "道路-国道-19.5m以上-橋・高架",
+      "id": "道路-国道-19.5m以上-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -17860,7 +17916,7 @@
       }
     },
     {
-      "id": "道路-国道-19.5m以上-橋・高架",
+      "id": "道路-国道-19.5m以上-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -17899,7 +17955,7 @@
       }
     },
     {
-      "id": "鉄道-地下鉄-トンネル",
+      "id": "鉄道-地下鉄-トンネル11",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -17972,7 +18028,7 @@
       }
     },
     {
-      "id": "鉄道-索道",
+      "id": "鉄道-索道11",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -18005,7 +18061,7 @@
       }
     },
     {
-      "id": "鉄道-路面",
+      "id": "鉄道-路面8",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -18043,7 +18099,7 @@
       }
     },
     {
-      "id": "鉄道-JR以外-トンネル",
+      "id": "鉄道-JR以外-トンネル8",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -18117,7 +18173,7 @@
       }
     },
     {
-      "id": "鉄道-JR以外-トンネル",
+      "id": "鉄道-JR以外-トンネル11",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -18203,7 +18259,7 @@
       }
     },
     {
-      "id": "鉄道-JR以外-通常部-単線",
+      "id": "鉄道-JR以外-通常部-単線8",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -18273,7 +18329,7 @@
       }
     },
     {
-      "id": "鉄道-JR以外-通常部-単線",
+      "id": "鉄道-JR以外-通常部-単線11",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -18355,7 +18411,7 @@
       }
     },
     {
-      "id": "鉄道-地下鉄-通常部-単線",
+      "id": "鉄道-地下鉄-通常部-単線11",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -18424,7 +18480,7 @@
       }
     },
     {
-      "id": "鉄道-JR以外-通常部-複線",
+      "id": "鉄道-JR以外-通常部-複線8",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -18494,7 +18550,7 @@
       }
     },
     {
-      "id": "鉄道-JR以外-通常部-複線",
+      "id": "鉄道-JR以外-通常部-複線11",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -18576,7 +18632,7 @@
       }
     },
     {
-      "id": "鉄道-地下鉄-通常部-複線",
+      "id": "鉄道-地下鉄-通常部-複線11",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -18645,7 +18701,7 @@
       }
     },
     {
-      "id": "鉄道-JR-トンネル",
+      "id": "鉄道-JR-トンネル8",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -18719,7 +18775,7 @@
       }
     },
     {
-      "id": "鉄道-JR-トンネル",
+      "id": "鉄道-JR-トンネル11",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -18805,7 +18861,7 @@
       }
     },
     {
-      "id": "鉄道-JR-通常部-単線",
+      "id": "鉄道-JR-通常部-単線8",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -18875,7 +18931,7 @@
       }
     },
     {
-      "id": "鉄道-JR-通常部-単線",
+      "id": "鉄道-JR-通常部-単線8",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -18945,7 +19001,7 @@
       }
     },
     {
-      "id": "鉄道-JR-通常部-単線",
+      "id": "鉄道-JR-通常部-単線8",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -19019,7 +19075,7 @@
       }
     },
     {
-      "id": "鉄道-JR-通常部-単線",
+      "id": "鉄道-JR-通常部-単線11",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -19101,7 +19157,7 @@
       }
     },
     {
-      "id": "鉄道-JR-通常部-単線",
+      "id": "鉄道-JR-通常部-単線11",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -19183,7 +19239,7 @@
       }
     },
     {
-      "id": "鉄道-JR-通常部-単線",
+      "id": "鉄道-JR-通常部-単線11",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -19269,7 +19325,7 @@
       }
     },
     {
-      "id": "鉄道-JR-通常部-複線",
+      "id": "鉄道-JR-通常部-複線8",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -19339,7 +19395,7 @@
       }
     },
     {
-      "id": "鉄道-JR-通常部-複線",
+      "id": "鉄道-JR-通常部-複線8",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -19409,7 +19465,7 @@
       }
     },
     {
-      "id": "鉄道-JR-通常部-複線",
+      "id": "鉄道-JR-通常部-複線8",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -19485,7 +19541,7 @@
       }
     },
     {
-      "id": "鉄道-JR-通常部-複線",
+      "id": "鉄道-JR-通常部-複線11",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -19567,7 +19623,7 @@
       }
     },
     {
-      "id": "鉄道-JR-通常部-複線",
+      "id": "鉄道-JR-通常部-複線11",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -19649,7 +19705,7 @@
       }
     },
     {
-      "id": "鉄道-JR-通常部-複線",
+      "id": "鉄道-JR-通常部-複線11",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -19737,7 +19793,7 @@
       }
     },
     {
-      "id": "鉄道-地下鉄駅",
+      "id": "鉄道-地下鉄駅11",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -19782,7 +19838,7 @@
       }
     },
     {
-      "id": "鉄道-駅",
+      "id": "鉄道-駅11",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -19819,7 +19875,7 @@
       }
     },
     {
-      "id": "道路-高速道路-通常部-通常部",
+      "id": "道路-高速道路-通常部-通常部8",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -19861,7 +19917,7 @@
       }
     },
     {
-      "id": "道路-高速道路-通常部-通常部",
+      "id": "道路-高速道路-通常部-通常部8",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -19903,7 +19959,7 @@
       }
     },
     {
-      "id": "道路-高速道路-通常部-トンネル",
+      "id": "道路-高速道路-通常部-トンネル8",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -19932,7 +19988,7 @@
       }
     },
     {
-      "id": "道路-高速道路-3m未満・その他・不明-トンネル",
+      "id": "道路-高速道路-3m未満・その他・不明-トンネル11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -19974,7 +20030,7 @@
       }
     },
     {
-      "id": "道路-高速道路-3m未満・その他・不明-通常部",
+      "id": "道路-高速道路-3m未満・その他・不明-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -20016,7 +20072,7 @@
       }
     },
     {
-      "id": "道路-高速道路-3m未満・その他・不明-通常部",
+      "id": "道路-高速道路-3m未満・その他・不明-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -20058,7 +20114,7 @@
       }
     },
     {
-      "id": "道路-高速道路-3m未満・その他・不明-通常部",
+      "id": "道路-高速道路-3m未満・その他・不明-通常部13",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -20111,7 +20167,7 @@
       }
     },
     {
-      "id": "道路-高速道路-3m未満・その他・不明-通常部",
+      "id": "道路-高速道路-3m未満・その他・不明-通常部13",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -20164,7 +20220,7 @@
       }
     },
     {
-      "id": "道路-高速道路-3m未満・その他・不明-橋・高架",
+      "id": "道路-高速道路-3m未満・その他・不明-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -20206,7 +20262,7 @@
       }
     },
     {
-      "id": "道路-高速道路-3m未満・その他・不明-橋・高架",
+      "id": "道路-高速道路-3m未満・その他・不明-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -20248,7 +20304,7 @@
       }
     },
     {
-      "id": "道路-高速道路-3m以上5.5m未満-トンネル",
+      "id": "道路-高速道路-3m以上5.5m未満-トンネル11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -20282,7 +20338,7 @@
       }
     },
     {
-      "id": "道路-高速道路-3m以上5.5m未満-通常部",
+      "id": "道路-高速道路-3m以上5.5m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -20316,7 +20372,7 @@
       }
     },
     {
-      "id": "道路-高速道路-3m以上5.5m未満-通常部",
+      "id": "道路-高速道路-3m以上5.5m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -20350,7 +20406,7 @@
       }
     },
     {
-      "id": "道路-高速道路-3m以上5.5m未満-橋・高架",
+      "id": "道路-高速道路-3m以上5.5m未満-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -20384,7 +20440,7 @@
       }
     },
     {
-      "id": "道路-高速道路-3m以上5.5m未満-橋・高架",
+      "id": "道路-高速道路-3m以上5.5m未満-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -20418,7 +20474,7 @@
       }
     },
     {
-      "id": "道路-高速道路-5.5m以上13m未満-トンネル",
+      "id": "道路-高速道路-5.5m以上13m未満-トンネル11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -20452,7 +20508,7 @@
       }
     },
     {
-      "id": "道路-高速道路-5.5m以上13m未満-通常部",
+      "id": "道路-高速道路-5.5m以上13m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -20486,7 +20542,7 @@
       }
     },
     {
-      "id": "道路-高速道路-5.5m以上13m未満-通常部",
+      "id": "道路-高速道路-5.5m以上13m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -20520,7 +20576,7 @@
       }
     },
     {
-      "id": "道路-高速道路-5.5m以上13m未満-橋・高架",
+      "id": "道路-高速道路-5.5m以上13m未満-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -20554,7 +20610,7 @@
       }
     },
     {
-      "id": "道路-高速道路-5.5m以上13m未満-橋・高架",
+      "id": "道路-高速道路-5.5m以上13m未満-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -20588,7 +20644,7 @@
       }
     },
     {
-      "id": "道路-高速道路-13m以上19.5m未満-トンネル",
+      "id": "道路-高速道路-13m以上19.5m未満-トンネル11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -20622,7 +20678,7 @@
       }
     },
     {
-      "id": "道路-高速道路-13m以上19.5m未満-通常部",
+      "id": "道路-高速道路-13m以上19.5m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -20656,7 +20712,7 @@
       }
     },
     {
-      "id": "道路-高速道路-13m以上19.5m未満-通常部",
+      "id": "道路-高速道路-13m以上19.5m未満-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -20690,7 +20746,7 @@
       }
     },
     {
-      "id": "道路-高速道路-13m以上19.5m未満-橋・高架",
+      "id": "道路-高速道路-13m以上19.5m未満-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -20724,7 +20780,7 @@
       }
     },
     {
-      "id": "道路-高速道路-13m以上19.5m未満-橋・高架",
+      "id": "道路-高速道路-13m以上19.5m未満-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -20758,7 +20814,7 @@
       }
     },
     {
-      "id": "道路-高速道路-19.5m以上-トンネル",
+      "id": "道路-高速道路-19.5m以上-トンネル11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -20792,7 +20848,7 @@
       }
     },
     {
-      "id": "道路-高速道路-19.5m以上-通常部",
+      "id": "道路-高速道路-19.5m以上-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -20826,7 +20882,7 @@
       }
     },
     {
-      "id": "道路-高速道路-19.5m以上-通常部",
+      "id": "道路-高速道路-19.5m以上-通常部11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -20860,7 +20916,7 @@
       }
     },
     {
-      "id": "道路-高速道路-19.5m以上-橋・高架",
+      "id": "道路-高速道路-19.5m以上-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -20894,7 +20950,7 @@
       }
     },
     {
-      "id": "道路-高速道路-19.5m以上-橋・高架",
+      "id": "道路-高速道路-19.5m以上-橋・高架11",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -20928,7 +20984,7 @@
       }
     },
     {
-      "id": "鉄道-主要な鉄道",
+      "id": "鉄道-主要な鉄道6",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -20951,7 +21007,7 @@
       }
     },
     {
-      "id": "鉄道-主要な鉄道トンネル",
+      "id": "鉄道-主要な鉄道トンネル6",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -20974,7 +21030,7 @@
       }
     },
     {
-      "id": "鉄道-新幹線",
+      "id": "鉄道-新幹線6",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -20997,7 +21053,7 @@
       }
     },
     {
-      "id": "鉄道-新幹線トンネル",
+      "id": "鉄道-新幹線トンネル6",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -21020,7 +21076,7 @@
       }
     },
     {
-      "id": "鉄道-側線-通常部",
+      "id": "鉄道-側線-通常部17",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -21043,7 +21099,7 @@
       }
     },
     {
-      "id": "鉄道-特殊鉄道-通常部",
+      "id": "鉄道-特殊鉄道-通常部17",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -21066,7 +21122,7 @@
       }
     },
     {
-      "id": "鉄道-索道",
+      "id": "鉄道-索道17",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -21089,7 +21145,7 @@
       }
     },
     {
-      "id": "鉄道-索道",
+      "id": "鉄道-索道17",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -21117,7 +21173,7 @@
       }
     },
     {
-      "id": "鉄道-索道",
+      "id": "鉄道-索道17",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -21145,7 +21201,7 @@
       }
     },
     {
-      "id": "鉄道-路面",
+      "id": "鉄道-路面17",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -21168,7 +21224,7 @@
       }
     },
     {
-      "id": "鉄道-普通鉄道-通常部",
+      "id": "鉄道-普通鉄道-通常部17",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -21191,7 +21247,7 @@
       }
     },
     {
-      "id": "鉄道-普通鉄道-トンネル",
+      "id": "鉄道-普通鉄道-トンネル17",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -21218,7 +21274,7 @@
       }
     },
     {
-      "id": "鉄道-普通鉄道-運休中",
+      "id": "鉄道-普通鉄道-運休中17",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -21241,7 +21297,7 @@
       }
     },
     {
-      "id": "鉄道-地下鉄駅",
+      "id": "鉄道-地下鉄駅17",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -21310,7 +21366,7 @@
       }
     },
     {
-      "id": "鉄道-地下鉄駅",
+      "id": "鉄道-地下鉄駅17",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -21379,7 +21435,7 @@
       }
     },
     {
-      "id": "道路-主要な道路",
+      "id": "道路-主要な道路6",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -21402,7 +21458,7 @@
       }
     },
     {
-      "id": "道路-主要な道路トンネル",
+      "id": "道路-主要な道路トンネル6",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -21425,7 +21481,7 @@
       }
     },
     {
-      "id": "道路-庭園路-通常部",
+      "id": "道路-庭園路-通常部17",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -21458,7 +21514,7 @@
       }
     },
     {
-      "id": "道路-庭園路-橋・高架",
+      "id": "道路-庭園路-橋・高架17",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -21481,7 +21537,7 @@
       }
     },
     {
-      "id": "道路-徒歩道-通常部",
+      "id": "道路-徒歩道-通常部17",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -21508,7 +21564,7 @@
       }
     },
     {
-      "id": "道路-徒歩道-雪覆い",
+      "id": "道路-徒歩道-雪覆い17",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -21531,7 +21587,7 @@
       }
     },
     {
-      "id": "道路-徒歩道-橋・高架",
+      "id": "道路-徒歩道-橋・高架17",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -21554,7 +21610,7 @@
       }
     },
     {
-      "id": "道路-トンネル内の道路-3m未満・その他・不明",
+      "id": "道路-トンネル内の道路-3m未満・その他・不明17",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -21607,7 +21663,7 @@
       }
     },
     {
-      "id": "道路-トンネル内の道路-3m未満・その他・不明",
+      "id": "道路-トンネル内の道路-3m未満・その他・不明17",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -21660,7 +21716,7 @@
       }
     },
     {
-      "id": "道路-トンネル内の道路-3m以上5.5m未満",
+      "id": "道路-トンネル内の道路-3m以上5.5m未満17",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -21705,7 +21761,7 @@
       }
     },
     {
-      "id": "道路-トンネル内の道路-3m以上5.5m未満",
+      "id": "道路-トンネル内の道路-3m以上5.5m未満17",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -21750,7 +21806,7 @@
       }
     },
     {
-      "id": "道路-トンネル内の道路-5.5m以上13m未満",
+      "id": "道路-トンネル内の道路-5.5m以上13m未満17",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -21795,7 +21851,7 @@
       }
     },
     {
-      "id": "道路-トンネル内の道路-5.5m以上13m未満",
+      "id": "道路-トンネル内の道路-5.5m以上13m未満17",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -21840,7 +21896,7 @@
       }
     },
     {
-      "id": "道路-トンネル内の道路-13m以上19.5m未満",
+      "id": "道路-トンネル内の道路-13m以上19.5m未満17",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -21885,7 +21941,7 @@
       }
     },
     {
-      "id": "道路-トンネル内の道路-13m以上19.5m未満",
+      "id": "道路-トンネル内の道路-13m以上19.5m未満17",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -21930,7 +21986,7 @@
       }
     },
     {
-      "id": "道路-トンネル内の道路-通常部",
+      "id": "道路-トンネル内の道路-通常部17",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -21962,7 +22018,7 @@
       }
     },
     {
-      "id": "道路-通常部-通常部",
+      "id": "道路-通常部-通常部17",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -22000,7 +22056,7 @@
       }
     },
     {
-      "id": "道路-通常部-橋・高架",
+      "id": "道路-通常部-橋・高架17",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -22028,7 +22084,7 @@
       }
     },
     {
-      "id": "道路-歩道",
+      "id": "道路-歩道17",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -22051,7 +22107,7 @@
       }
     },
     {
-      "id": "道路-側溝",
+      "id": "道路-側溝17",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -22074,7 +22130,7 @@
       }
     },
     {
-      "id": "道路-雨水桝",
+      "id": "道路-雨水桝17",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -22097,7 +22153,7 @@
       }
     },
     {
-      "id": "鉄道-側線-橋・高架",
+      "id": "鉄道-側線-橋・高架17",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -22120,7 +22176,7 @@
       }
     },
     {
-      "id": "鉄道-普通鉄道-橋・高架",
+      "id": "鉄道-普通鉄道-橋・高架17",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -22143,7 +22199,7 @@
       }
     },
     {
-      "id": "鉄道-特殊鉄道-橋・高架",
+      "id": "鉄道-特殊鉄道-橋・高架17",
       "type": "line",
       "source": "v",
       "source-layer": "railway",
@@ -22166,7 +22222,7 @@
       }
     },
     {
-      "id": "道路-高速自動車道",
+      "id": "道路-高速自動車道6",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -22189,7 +22245,7 @@
       }
     },
     {
-      "id": "道路-高速自動車道トンネル",
+      "id": "道路-高速自動車道トンネル6",
       "type": "line",
       "source": "v",
       "source-layer": "road",
@@ -22212,7 +22268,7 @@
       }
     },
     {
-      "id": "建物-普通建物-普通建物",
+      "id": "建物-普通建物-普通建物14",
       "type": "fill",
       "source": "v",
       "source-layer": "building",
@@ -22244,7 +22300,7 @@
       }
     },
     {
-      "id": "建物-普通建物-普通建物（外周線）",
+      "id": "建物-普通建物-普通建物（外周線）14",
       "type": "line",
       "source": "v",
       "source-layer": "building",
@@ -22280,7 +22336,7 @@
       }
     },
     {
-      "id": "建物-堅ろう建物-堅ろう建物",
+      "id": "建物-堅ろう建物-堅ろう建物14",
       "type": "fill",
       "source": "v",
       "source-layer": "building",
@@ -22312,7 +22368,7 @@
       }
     },
     {
-      "id": "建物-堅ろう建物-堅ろう建物（外周線）",
+      "id": "建物-堅ろう建物-堅ろう建物（外周線）14",
       "type": "line",
       "source": "v",
       "source-layer": "building",
@@ -22348,7 +22404,7 @@
       }
     },
     {
-      "id": "建物-高層建物-高層建物",
+      "id": "建物-高層建物-高層建物14",
       "type": "fill",
       "source": "v",
       "source-layer": "building",
@@ -22380,7 +22436,7 @@
       }
     },
     {
-      "id": "建物-高層建物-高層建物（外周線）",
+      "id": "建物-高層建物-高層建物（外周線）14",
       "type": "line",
       "source": "v",
       "source-layer": "building",
@@ -22416,7 +22472,7 @@
       }
     },
     {
-      "id": "建物-普通無壁舎-普通無壁舎",
+      "id": "建物-普通無壁舎-普通無壁舎14",
       "type": "fill",
       "source": "v",
       "source-layer": "building",
@@ -22448,7 +22504,7 @@
       }
     },
     {
-      "id": "建物-普通無壁舎-普通無壁舎（外周線）",
+      "id": "建物-普通無壁舎-普通無壁舎（外周線）14",
       "type": "line",
       "source": "v",
       "source-layer": "building",
@@ -22488,7 +22544,7 @@
       }
     },
     {
-      "id": "建物-堅ろう無壁舎-堅ろう無壁舎",
+      "id": "建物-堅ろう無壁舎-堅ろう無壁舎14",
       "type": "fill",
       "source": "v",
       "source-layer": "building",
@@ -22520,7 +22576,7 @@
       }
     },
     {
-      "id": "建物-堅ろう無壁舎-堅ろう無壁舎（外周線）",
+      "id": "建物-堅ろう無壁舎-堅ろう無壁舎（外周線）14",
       "type": "line",
       "source": "v",
       "source-layer": "building",
@@ -22560,7 +22616,7 @@
       }
     },
     {
-      "id": "河川-人工水路（空間）",
+      "id": "河川-人工水路（空間）8",
       "type": "line",
       "source": "v",
       "source-layer": "river",
@@ -22594,7 +22650,7 @@
       }
     },
     {
-      "id": "河川-人工水路（空間）",
+      "id": "河川-人工水路（空間）8",
       "type": "line",
       "source": "v",
       "source-layer": "river",
@@ -22628,7 +22684,7 @@
       }
     },
     {
-      "id": "河川-人工水路（空間）",
+      "id": "河川-人工水路（空間）17",
       "type": "line",
       "source": "v",
       "source-layer": "river",
@@ -22651,7 +22707,7 @@
       }
     },
     {
-      "id": "地形-滝（領域）",
+      "id": "地形-滝（領域）14",
       "type": "symbol",
       "source": "v",
       "source-layer": "landformp",
@@ -22682,7 +22738,7 @@
       }
     },
     {
-      "id": "地形-砂礫地（領域が不明瞭な場合）",
+      "id": "地形-砂礫地（領域が不明瞭な場合）14",
       "type": "symbol",
       "source": "v",
       "source-layer": "landformp",
@@ -22713,7 +22769,7 @@
       }
     },
     {
-      "id": "地形-雨裂（下部）",
+      "id": "地形-雨裂（下部）14",
       "type": "symbol",
       "source": "v",
       "source-layer": "landformp",
@@ -22744,7 +22800,7 @@
       }
     },
     {
-      "id": "記号-主要な港",
+      "id": "記号-主要な港6",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -22786,7 +22842,7 @@
       }
     },
     {
-      "id": "記号-主要な空港",
+      "id": "記号-主要な空港6",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -22828,7 +22884,7 @@
       }
     },
     {
-      "id": "記号-都道府県所在地",
+      "id": "記号-都道府県所在地8",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -23089,7 +23145,7 @@
       }
     },
     {
-      "id": "記号-都道府県所在地",
+      "id": "記号-都道府県所在地11",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -23131,7 +23187,7 @@
       }
     },
     {
-      "id": "記号-市役所・東京都の区役所（都道府県所在都市以外）",
+      "id": "記号-市役所・東京都の区役所（都道府県所在都市以外）9",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -23392,7 +23448,7 @@
       }
     },
     {
-      "id": "記号-町・村",
+      "id": "記号-町・村9",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -23653,7 +23709,7 @@
       }
     },
     {
-      "id": "記号-官公署",
+      "id": "記号-官公署14",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -23695,7 +23751,7 @@
       }
     },
     {
-      "id": "記号-裁判所",
+      "id": "記号-裁判所14",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -23737,7 +23793,7 @@
       }
     },
     {
-      "id": "記号-税務署",
+      "id": "記号-税務署14",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -23779,7 +23835,7 @@
       }
     },
     {
-      "id": "記号-外国公館",
+      "id": "記号-外国公館14",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -23821,7 +23877,7 @@
       }
     },
     {
-      "id": "記号-市役所・東京都の区役所",
+      "id": "記号-市役所・東京都の区役所13",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -23867,7 +23923,7 @@
       }
     },
     {
-      "id": "記号-町村役場・政令指定都市の区役所",
+      "id": "記号-町村役場・政令指定都市の区役所13",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -23913,7 +23969,7 @@
       }
     },
     {
-      "id": "記号-警察署",
+      "id": "記号-警察署13",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -23959,7 +24015,7 @@
       }
     },
     {
-      "id": "記号-交番",
+      "id": "記号-交番14",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -24001,7 +24057,7 @@
       }
     },
     {
-      "id": "記号-消防署",
+      "id": "記号-消防署14",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -24043,7 +24099,7 @@
       }
     },
     {
-      "id": "記号-高等学校・中等教育学校",
+      "id": "記号-高等学校・中等教育学校13",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -24089,7 +24145,7 @@
       }
     },
     {
-      "id": "記号-中学校",
+      "id": "記号-中学校14",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -24131,7 +24187,7 @@
       }
     },
     {
-      "id": "記号-小学校",
+      "id": "記号-小学校14",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -24173,7 +24229,7 @@
       }
     },
     {
-      "id": "記号-病院",
+      "id": "記号-病院13",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -24219,7 +24275,7 @@
       }
     },
     {
-      "id": "記号-保健所",
+      "id": "記号-保健所14",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -24261,7 +24317,7 @@
       }
     },
     {
-      "id": "記号-老人ホーム",
+      "id": "記号-老人ホーム14",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -24303,7 +24359,7 @@
       }
     },
     {
-      "id": "記号-博物館法の登録博物館・博物館相当施設",
+      "id": "記号-博物館法の登録博物館・博物館相当施設14",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -24345,7 +24401,7 @@
       }
     },
     {
-      "id": "記号-図書館",
+      "id": "記号-図書館14",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -24387,7 +24443,7 @@
       }
     },
     {
-      "id": "記号-郵便局",
+      "id": "記号-郵便局13",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -24433,7 +24489,7 @@
       }
     },
     {
-      "id": "記号-灯台",
+      "id": "記号-灯台8",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -24464,7 +24520,7 @@
       }
     },
     {
-      "id": "記号-神社",
+      "id": "記号-神社13",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -24510,7 +24566,7 @@
       }
     },
     {
-      "id": "記号-寺院",
+      "id": "記号-寺院13",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -24556,7 +24612,7 @@
       }
     },
     {
-      "id": "記号-工場",
+      "id": "記号-工場13",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -24587,7 +24643,7 @@
       }
     },
     {
-      "id": "記号-煙突",
+      "id": "記号-煙突14",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -24629,7 +24685,7 @@
       }
     },
     {
-      "id": "記号-風車",
+      "id": "記号-風車13",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -24675,7 +24731,7 @@
       }
     },
     {
-      "id": "記号-油井・ガス井",
+      "id": "記号-油井・ガス井13",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -24721,7 +24777,7 @@
       }
     },
     {
-      "id": "記号-記念碑",
+      "id": "記号-記念碑14",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -24763,7 +24819,7 @@
       }
     },
     {
-      "id": "記号-温泉",
+      "id": "記号-温泉13",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -24809,7 +24865,7 @@
       }
     },
     {
-      "id": "記号-噴火口・噴気孔",
+      "id": "記号-噴火口・噴気孔13",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -24855,7 +24911,7 @@
       }
     },
     {
-      "id": "記号-史跡・名勝・天然記念物",
+      "id": "記号-史跡・名勝・天然記念物11",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -24901,7 +24957,7 @@
       }
     },
     {
-      "id": "記号-城跡",
+      "id": "記号-城跡11",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -24932,7 +24988,7 @@
       }
     },
     {
-      "id": "記号-採鉱地",
+      "id": "記号-採鉱地11",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -24963,7 +25019,7 @@
       }
     },
     {
-      "id": "記号-港湾",
+      "id": "記号-港湾13",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -25009,7 +25065,7 @@
       }
     },
     {
-      "id": "記号-漁港",
+      "id": "記号-漁港13",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -25055,7 +25111,7 @@
       }
     },
     {
-      "id": "記号-自衛隊等の飛行場",
+      "id": "記号-自衛隊等の飛行場11",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -25086,7 +25142,7 @@
       }
     },
     {
-      "id": "記号-自衛隊",
+      "id": "記号-自衛隊11",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -25117,7 +25173,7 @@
       }
     },
     {
-      "id": "記号-特定重要港",
+      "id": "記号-特定重要港8",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -25148,7 +25204,7 @@
       }
     },
     {
-      "id": "記号-重要港",
+      "id": "記号-重要港8",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -25179,7 +25235,7 @@
       }
     },
     {
-      "id": "記号-国際空港",
+      "id": "記号-国際空港8",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -25210,7 +25266,7 @@
       }
     },
     {
-      "id": "記号-国際空港以外の拠点空港等",
+      "id": "記号-国際空港以外の拠点空港等8",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -25241,7 +25297,7 @@
       }
     },
     {
-      "id": "記号-三角点",
+      "id": "記号-三角点9",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -25307,7 +25363,7 @@
       }
     },
     {
-      "id": "記号-三角点",
+      "id": "記号-三角点12",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -25373,7 +25429,7 @@
       }
     },
     {
-      "id": "記号-三角点",
+      "id": "記号-三角点14",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -25439,7 +25495,7 @@
       }
     },
     {
-      "id": "記号-水準点",
+      "id": "記号-水準点14",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -25516,7 +25572,7 @@
       }
     },
     {
-      "id": "記号-発電所等",
+      "id": "記号-発電所等13",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -25562,7 +25618,7 @@
       }
     },
     {
-      "id": "記号-電波塔",
+      "id": "記号-電波塔14",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -25604,7 +25660,7 @@
       }
     },
     {
-      "id": "標高-標高点",
+      "id": "標高-標高点6",
       "type": "symbol",
       "source": "v",
       "source-layer": "elevation",
@@ -25817,7 +25873,7 @@
       }
     },
     {
-      "id": "標高-標高点（測点）",
+      "id": "標高-標高点（測点）9",
       "type": "symbol",
       "source": "v",
       "source-layer": "elevation",
@@ -25862,7 +25918,7 @@
       }
     },
     {
-      "id": "標高-火山",
+      "id": "標高-火山8",
       "type": "symbol",
       "source": "v",
       "source-layer": "elevation",
@@ -25991,7 +26047,7 @@
       }
     },
     {
-      "id": "標高-水面標高",
+      "id": "標高-水面標高14",
       "type": "symbol",
       "source": "v",
       "source-layer": "elevation",
@@ -26027,7 +26083,7 @@
       }
     },
     {
-      "id": "標高-水深",
+      "id": "標高-水深14",
       "type": "symbol",
       "source": "v",
       "source-layer": "elevation",
@@ -26072,7 +26128,7 @@
       }
     },
     {
-      "id": "交通構造物-国道番号",
+      "id": "交通構造物-国道番号9",
       "type": "symbol",
       "source": "v",
       "source-layer": "transp",
@@ -26114,7 +26170,7 @@
       }
     },
     {
-      "id": "交通構造物-国道番号",
+      "id": "交通構造物-国道番号17",
       "type": "symbol",
       "source": "v",
       "source-layer": "transp",
@@ -26152,7 +26208,7 @@
       }
     },
     {
-      "id": "交通構造物-都市高速道路番号",
+      "id": "交通構造物-都市高速道路番号11",
       "type": "symbol",
       "source": "v",
       "source-layer": "transp",
@@ -26194,7 +26250,7 @@
       }
     },
     {
-      "id": "交通構造物-高速道路番号",
+      "id": "交通構造物-高速道路番号8",
       "type": "symbol",
       "source": "v",
       "source-layer": "transp",
@@ -26236,7 +26292,7 @@
       }
     },
     {
-      "id": "交通構造物-高速道路番号",
+      "id": "交通構造物-高速道路番号11",
       "type": "symbol",
       "source": "v",
       "source-layer": "transp",
@@ -26278,7 +26334,7 @@
       }
     },
     {
-      "id": "交通構造物-インターチェンジ",
+      "id": "交通構造物-インターチェンジ10",
       "type": "symbol",
       "source": "v",
       "source-layer": "transp",
@@ -26309,7 +26365,7 @@
       }
     },
     {
-      "id": "交通構造物-インターチェンジ",
+      "id": "交通構造物-インターチェンジ11",
       "type": "symbol",
       "source": "v",
       "source-layer": "transp",
@@ -26363,7 +26419,7 @@
       }
     },
     {
-      "id": "交通構造物-ジャンクション",
+      "id": "交通構造物-ジャンクション10",
       "type": "symbol",
       "source": "v",
       "source-layer": "transp",
@@ -26394,7 +26450,7 @@
       }
     },
     {
-      "id": "交通構造物-ジャンクション",
+      "id": "交通構造物-ジャンクション11",
       "type": "symbol",
       "source": "v",
       "source-layer": "transp",
@@ -26448,7 +26504,7 @@
       }
     },
     {
-      "id": "交通構造物-サービスエリア",
+      "id": "交通構造物-サービスエリア11",
       "type": "symbol",
       "source": "v",
       "source-layer": "transp",
@@ -26502,7 +26558,7 @@
       }
     },
     {
-      "id": "交通構造物-パーキングエリア",
+      "id": "交通構造物-パーキングエリア11",
       "type": "symbol",
       "source": "v",
       "source-layer": "transp",
@@ -26556,7 +26612,7 @@
       }
     },
     {
-      "id": "交通構造物-スマートインターチェンジ",
+      "id": "交通構造物-スマートインターチェンジ10",
       "type": "symbol",
       "source": "v",
       "source-layer": "transp",
@@ -26587,7 +26643,7 @@
       }
     },
     {
-      "id": "交通構造物-スマートインターチェンジ",
+      "id": "交通構造物-スマートインターチェンジ11",
       "type": "symbol",
       "source": "v",
       "source-layer": "transp",
@@ -26641,7 +26697,7 @@
       }
     },
     {
-      "id": "記号-人口50万人未満",
+      "id": "記号-人口50万人未満4",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -26986,7 +27042,7 @@
       }
     },
     {
-      "id": "記号-人口50万人未満",
+      "id": "記号-人口50万人未満6",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -27331,7 +27387,7 @@
       }
     },
     {
-      "id": "記号-人口50万～100万人未満",
+      "id": "記号-人口50万～100万人未満4",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -27676,7 +27732,7 @@
       }
     },
     {
-      "id": "記号-人口50万～100万人未満",
+      "id": "記号-人口50万～100万人未満6",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -28021,7 +28077,7 @@
       }
     },
     {
-      "id": "記号-人口100万人以上",
+      "id": "記号-人口100万人以上4",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -28366,7 +28422,7 @@
       }
     },
     {
-      "id": "記号-人口100万人以上",
+      "id": "記号-人口100万人以上6",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -28711,7 +28767,7 @@
       }
     },
     {
-      "id": "注記-ふりがな",
+      "id": "注記-ふりがな8",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -29072,7 +29128,7 @@
       }
     },
     {
-      "id": "注記-国名",
+      "id": "注記-国名4",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -29417,7 +29473,7 @@
       }
     },
     {
-      "id": "注記-地方名",
+      "id": "注記-地方名6",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -29754,7 +29810,7 @@
       }
     },
     {
-      "id": "注記-海域名",
+      "id": "注記-海域名4",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -30095,7 +30151,7 @@
       }
     },
     {
-      "id": "注記-湾・海峡",
+      "id": "注記-湾・海峡6",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -30432,7 +30488,7 @@
       }
     },
     {
-      "id": "注記-海底地形名",
+      "id": "注記-海底地形名6",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -30758,7 +30814,7 @@
       }
     },
     {
-      "id": "注記-諸島・群島・列島名",
+      "id": "注記-諸島・群島・列島名4",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -31103,7 +31159,7 @@
       }
     },
     {
-      "id": "注記-島名",
+      "id": "注記-島名4",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -31448,7 +31504,7 @@
       }
     },
     {
-      "id": "注記-湖沼名",
+      "id": "注記-湖沼名6",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -31785,7 +31841,7 @@
       }
     },
     {
-      "id": "注記-河川名",
+      "id": "注記-河川名6",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -32122,7 +32178,7 @@
       }
     },
     {
-      "id": "注記-半島名",
+      "id": "注記-半島名6",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -32459,7 +32515,7 @@
       }
     },
     {
-      "id": "注記-岬・崎名",
+      "id": "注記-岬・崎名6",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -32796,7 +32852,7 @@
       }
     },
     {
-      "id": "注記-山名",
+      "id": "注記-山名6",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -33133,7 +33189,7 @@
       }
     },
     {
-      "id": "注記-山地名、山脈名、平原名",
+      "id": "注記-山地名、山脈名、平原名6",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -33470,7 +33526,7 @@
       }
     },
     {
-      "id": "注記-市区町村",
+      "id": "注記-市区町村8",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -33835,7 +33891,7 @@
       }
     },
     {
-      "id": "注記-市街地",
+      "id": "注記-市街地8",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -34176,7 +34232,7 @@
       }
     },
     {
-      "id": "注記-山の総称-山の総称",
+      "id": "注記-山の総称-山の総称8",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -34517,7 +34573,7 @@
       }
     },
     {
-      "id": "注記-山の総称-山の総称",
+      "id": "注記-山の総称-山の総称14",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -34862,7 +34918,7 @@
       }
     },
     {
-      "id": "注記-山の総称-小",
+      "id": "注記-山の総称-小11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -35203,7 +35259,7 @@
       }
     },
     {
-      "id": "注記-山の総称-中",
+      "id": "注記-山の総称-中11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -35544,7 +35600,7 @@
       }
     },
     {
-      "id": "注記-山の総称-大",
+      "id": "注記-山の総称-大11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -35885,7 +35941,7 @@
       }
     },
     {
-      "id": "注記-山、岳、峰等（３０００ｍ以上）",
+      "id": "注記-山、岳、峰等（３０００ｍ以上）8",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -36226,7 +36282,7 @@
       }
     },
     {
-      "id": "注記-山、岳、峰等（１０００ｍ以上）",
+      "id": "注記-山、岳、峰等（１０００ｍ以上）8",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -36567,7 +36623,7 @@
       }
     },
     {
-      "id": "注記-山、岳、峰等（１０００ｍ未満）",
+      "id": "注記-山、岳、峰等（１０００ｍ未満）8",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -36908,7 +36964,7 @@
       }
     },
     {
-      "id": "注記-湖、沼、池、浦等-湖、沼、池、浦等",
+      "id": "注記-湖、沼、池、浦等-湖、沼、池、浦等8",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -37249,7 +37305,7 @@
       }
     },
     {
-      "id": "注記-湖、沼、池、浦等-小",
+      "id": "注記-湖、沼、池、浦等-小11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -37606,7 +37662,7 @@
       }
     },
     {
-      "id": "注記-湖、沼、池、浦等-中",
+      "id": "注記-湖、沼、池、浦等-中11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -37959,7 +38015,7 @@
       }
     },
     {
-      "id": "注記-湖、沼、池、浦等-大",
+      "id": "注記-湖、沼、池、浦等-大11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -38312,7 +38368,7 @@
       }
     },
     {
-      "id": "注記-河川、用水等-河川、用水等",
+      "id": "注記-河川、用水等-河川、用水等8",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -38653,7 +38709,7 @@
       }
     },
     {
-      "id": "注記-河川、用水等-河川、用水等",
+      "id": "注記-河川、用水等-河川、用水等14",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -38994,7 +39050,7 @@
       }
     },
     {
-      "id": "注記-河川、用水等-小",
+      "id": "注記-河川、用水等-小11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -39335,7 +39391,7 @@
       }
     },
     {
-      "id": "注記-河川、用水等-中",
+      "id": "注記-河川、用水等-中11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -39676,7 +39732,7 @@
       }
     },
     {
-      "id": "注記-河川、用水等-大",
+      "id": "注記-河川、用水等-大11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -40017,7 +40073,7 @@
       }
     },
     {
-      "id": "注記-山脈、山地-山脈、山地",
+      "id": "注記-山脈、山地-山脈、山地8",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -40358,7 +40414,7 @@
       }
     },
     {
-      "id": "注記-山脈、山地-小",
+      "id": "注記-山脈、山地-小11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -40699,7 +40755,7 @@
       }
     },
     {
-      "id": "注記-山脈、山地-中",
+      "id": "注記-山脈、山地-中11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -41040,7 +41096,7 @@
       }
     },
     {
-      "id": "注記-山脈、山地-大",
+      "id": "注記-山脈、山地-大11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -41381,7 +41437,7 @@
       }
     },
     {
-      "id": "注記-平野、盆地-平野、盆地",
+      "id": "注記-平野、盆地-平野、盆地8",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -41722,7 +41778,7 @@
       }
     },
     {
-      "id": "注記-平野、盆地-小",
+      "id": "注記-平野、盆地-小11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -42063,7 +42119,7 @@
       }
     },
     {
-      "id": "注記-平野、盆地-中",
+      "id": "注記-平野、盆地-中11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -42404,7 +42460,7 @@
       }
     },
     {
-      "id": "注記-平野、盆地-大",
+      "id": "注記-平野、盆地-大11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -42745,7 +42801,7 @@
       }
     },
     {
-      "id": "注記-高原、原、森、林、平、砂丘、湿原-高原、原、森、林、平、砂丘、湿原",
+      "id": "注記-高原、原、森、林、平、砂丘、湿原-高原、原、森、林、平、砂丘、湿原8",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -43086,7 +43142,7 @@
       }
     },
     {
-      "id": "注記-高原、原、森、林、平、砂丘、湿原-小",
+      "id": "注記-高原、原、森、林、平、砂丘、湿原-小11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -43427,7 +43483,7 @@
       }
     },
     {
-      "id": "注記-高原、原、森、林、平、砂丘、湿原-中",
+      "id": "注記-高原、原、森、林、平、砂丘、湿原-中11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -43768,7 +43824,7 @@
       }
     },
     {
-      "id": "注記-高原、原、森、林、平、砂丘、湿原-大",
+      "id": "注記-高原、原、森、林、平、砂丘、湿原-大11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -44109,7 +44165,7 @@
       }
     },
     {
-      "id": "注記-岩、溶岩、崖、鍾乳洞、温泉、湧水、噴泉、噴火口、峠、坂等-岩、溶岩、崖、鍾乳洞、温泉、湧水、噴泉、噴火口、峠、坂等",
+      "id": "注記-岩、溶岩、崖、鍾乳洞、温泉、湧水、噴泉、噴火口、峠、坂等-岩、溶岩、崖、鍾乳洞、温泉、湧水、噴泉、噴火口、峠、坂等8",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -44450,7 +44506,7 @@
       }
     },
     {
-      "id": "注記-岩、溶岩、崖、鍾乳洞、温泉、湧水、噴泉、噴火口、峠、坂等-岩、溶岩、崖、鍾乳洞、温泉、湧水、噴泉、噴火口、峠、坂等",
+      "id": "注記-岩、溶岩、崖、鍾乳洞、温泉、湧水、噴泉、噴火口、峠、坂等-岩、溶岩、崖、鍾乳洞、温泉、湧水、噴泉、噴火口、峠、坂等14",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -44795,7 +44851,7 @@
       }
     },
     {
-      "id": "注記-岩、溶岩、崖、鍾乳洞、温泉、湧水、噴泉、噴火口、峠、坂等-小",
+      "id": "注記-岩、溶岩、崖、鍾乳洞、温泉、湧水、噴泉、噴火口、峠、坂等-小11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -45136,7 +45192,7 @@
       }
     },
     {
-      "id": "注記-岩、溶岩、崖、鍾乳洞、温泉、湧水、噴泉、噴火口、峠、坂等-中",
+      "id": "注記-岩、溶岩、崖、鍾乳洞、温泉、湧水、噴泉、噴火口、峠、坂等-中11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -45477,7 +45533,7 @@
       }
     },
     {
-      "id": "注記-岩、溶岩、崖、鍾乳洞、温泉、湧水、噴泉、噴火口、峠、坂等-大",
+      "id": "注記-岩、溶岩、崖、鍾乳洞、温泉、湧水、噴泉、噴火口、峠、坂等-大11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -45818,7 +45874,7 @@
       }
     },
     {
-      "id": "注記-海、灘-海、灘",
+      "id": "注記-海、灘-海、灘8",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -46159,7 +46215,7 @@
       }
     },
     {
-      "id": "注記-海、灘-小",
+      "id": "注記-海、灘-小11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -46500,7 +46556,7 @@
       }
     },
     {
-      "id": "注記-海、灘-中",
+      "id": "注記-海、灘-中11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -46841,7 +46897,7 @@
       }
     },
     {
-      "id": "注記-海、灘-大",
+      "id": "注記-海、灘-大11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -47182,7 +47238,7 @@
       }
     },
     {
-      "id": "注記-海山、海嶺、海盆等",
+      "id": "注記-海山、海嶺、海盆等8",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -47523,7 +47579,7 @@
       }
     },
     {
-      "id": "注記-湾、淵、浦、瀬、海峡、瀬戸等、水道",
+      "id": "注記-湾、淵、浦、瀬、海峡、瀬戸等、水道8",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -47864,7 +47920,7 @@
       }
     },
     {
-      "id": "注記-半島-半島",
+      "id": "注記-半島-半島8",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -48205,7 +48261,7 @@
       }
     },
     {
-      "id": "注記-半島-小",
+      "id": "注記-半島-小11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -48546,7 +48602,7 @@
       }
     },
     {
-      "id": "注記-半島-中",
+      "id": "注記-半島-中11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -48887,7 +48943,7 @@
       }
     },
     {
-      "id": "注記-半島-大",
+      "id": "注記-半島-大11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -49228,7 +49284,7 @@
       }
     },
     {
-      "id": "注記-海岸、浜、洲、干潟-海岸、浜、洲、干潟",
+      "id": "注記-海岸、浜、洲、干潟-海岸、浜、洲、干潟8",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -49569,7 +49625,7 @@
       }
     },
     {
-      "id": "注記-海岸、浜、洲、干潟-小",
+      "id": "注記-海岸、浜、洲、干潟-小11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -49922,7 +49978,7 @@
       }
     },
     {
-      "id": "注記-海岸、浜、洲、干潟-中",
+      "id": "注記-海岸、浜、洲、干潟-中11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -50275,7 +50331,7 @@
       }
     },
     {
-      "id": "注記-海岸、浜、洲、干潟-大",
+      "id": "注記-海岸、浜、洲、干潟-大11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -50628,7 +50684,7 @@
       }
     },
     {
-      "id": "注記-岬、鼻、崎、磯、敷等-岬、鼻、崎、磯、敷等",
+      "id": "注記-岬、鼻、崎、磯、敷等-岬、鼻、崎、磯、敷等8",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -50969,7 +51025,7 @@
       }
     },
     {
-      "id": "注記-岬、鼻、崎、磯、敷等-小",
+      "id": "注記-岬、鼻、崎、磯、敷等-小11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -51322,7 +51378,7 @@
       }
     },
     {
-      "id": "注記-岬、鼻、崎、磯、敷等-中",
+      "id": "注記-岬、鼻、崎、磯、敷等-中11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -51675,7 +51731,7 @@
       }
     },
     {
-      "id": "注記-岬、鼻、崎、磯、敷等-大",
+      "id": "注記-岬、鼻、崎、磯、敷等-大11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -52028,7 +52084,7 @@
       }
     },
     {
-      "id": "注記-諸島、群島、列島、島の総称等",
+      "id": "注記-諸島、群島、列島、島の総称等8",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -52369,7 +52425,7 @@
       }
     },
     {
-      "id": "注記-島-島",
+      "id": "注記-島-島8",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -52710,7 +52766,7 @@
       }
     },
     {
-      "id": "注記-島-小",
+      "id": "注記-島-小11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -53063,7 +53119,7 @@
       }
     },
     {
-      "id": "注記-島-中",
+      "id": "注記-島-中11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -53416,7 +53472,7 @@
       }
     },
     {
-      "id": "注記-島-大",
+      "id": "注記-島-大11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -53769,7 +53825,7 @@
       }
     },
     {
-      "id": "注記-道路名",
+      "id": "注記-道路名9",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -54114,7 +54170,7 @@
       }
     },
     {
-      "id": "注記-道路名",
+      "id": "注記-道路名14",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -54459,7 +54515,7 @@
       }
     },
     {
-      "id": "注記-鉄道路線名",
+      "id": "注記-鉄道路線名8",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -54808,7 +54864,7 @@
       }
     },
     {
-      "id": "注記-鉄道路線名",
+      "id": "注記-鉄道路線名14",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -55161,7 +55217,7 @@
       }
     },
     {
-      "id": "注記-到達注記",
+      "id": "注記-到達注記8",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -55502,7 +55558,7 @@
       }
     },
     {
-      "id": "注記-都道府県",
+      "id": "注記-都道府県8",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -55839,7 +55895,7 @@
       }
     },
     {
-      "id": "注記-飛び地",
+      "id": "注記-飛び地13",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -56180,7 +56236,7 @@
       }
     },
     {
-      "id": "注記-郡",
+      "id": "注記-郡11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -56521,7 +56577,7 @@
       }
     },
     {
-      "id": "注記-公称（町字名）",
+      "id": "注記-公称（町字名）13",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -56870,7 +56926,7 @@
       }
     },
     {
-      "id": "注記-集落名称（通称）",
+      "id": "注記-集落名称（通称）13",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -57215,7 +57271,7 @@
       }
     },
     {
-      "id": "注記-山、岳、峰等-小",
+      "id": "注記-山、岳、峰等-小11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -57556,7 +57612,7 @@
       }
     },
     {
-      "id": "注記-山、岳、峰等-中",
+      "id": "注記-山、岳、峰等-中11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -57897,7 +57953,7 @@
       }
     },
     {
-      "id": "注記-山、岳、峰等-大",
+      "id": "注記-山、岳、峰等-大11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -58238,7 +58294,7 @@
       }
     },
     {
-      "id": "注記-山、岳、峰等-山、岳、峰等",
+      "id": "注記-山、岳、峰等-山、岳、峰等14",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -58579,7 +58635,7 @@
       }
     },
     {
-      "id": "注記-沢、瀬、淵、瀞、谷、峡、雪渓、河原、州、滝、浜、崎、半島、尻、島等-小",
+      "id": "注記-沢、瀬、淵、瀞、谷、峡、雪渓、河原、州、滝、浜、崎、半島、尻、島等-小11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -58920,7 +58976,7 @@
       }
     },
     {
-      "id": "注記-沢、瀬、淵、瀞、谷、峡、雪渓、河原、州、滝、浜、崎、半島、尻、島等-中",
+      "id": "注記-沢、瀬、淵、瀞、谷、峡、雪渓、河原、州、滝、浜、崎、半島、尻、島等-中11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -59261,7 +59317,7 @@
       }
     },
     {
-      "id": "注記-沢、瀬、淵、瀞、谷、峡、雪渓、河原、州、滝、浜、崎、半島、尻、島等-大",
+      "id": "注記-沢、瀬、淵、瀞、谷、峡、雪渓、河原、州、滝、浜、崎、半島、尻、島等-大11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -59602,7 +59658,7 @@
       }
     },
     {
-      "id": "注記-沢、瀬、淵、瀞、谷、峡、雪渓、河原、州、滝、浜、崎、半島、尻、島等-沢、瀬、淵、瀞、谷、峡、雪渓、河原、州、滝、浜、崎、半島、尻、島等",
+      "id": "注記-沢、瀬、淵、瀞、谷、峡、雪渓、河原、州、滝、浜、崎、半島、尻、島等-沢、瀬、淵、瀞、谷、峡、雪渓、河原、州、滝、浜、崎、半島、尻、島等14",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -59943,7 +59999,7 @@
       }
     },
     {
-      "id": "注記-海、湾、灘、淵、浦、瀬、海峡、瀬戸等-小",
+      "id": "注記-海、湾、灘、淵、浦、瀬、海峡、瀬戸等-小11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -60284,7 +60340,7 @@
       }
     },
     {
-      "id": "注記-海、湾、灘、淵、浦、瀬、海峡、瀬戸等-小",
+      "id": "注記-海、湾、灘、淵、浦、瀬、海峡、瀬戸等-小14",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -60625,7 +60681,7 @@
       }
     },
     {
-      "id": "注記-海、湾、灘、淵、浦、瀬、海峡、瀬戸等-中",
+      "id": "注記-海、湾、灘、淵、浦、瀬、海峡、瀬戸等-中11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -60966,7 +61022,7 @@
       }
     },
     {
-      "id": "注記-海、湾、灘、淵、浦、瀬、海峡、瀬戸等-中",
+      "id": "注記-海、湾、灘、淵、浦、瀬、海峡、瀬戸等-中14",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -61307,7 +61363,7 @@
       }
     },
     {
-      "id": "注記-海、湾、灘、淵、浦、瀬、海峡、瀬戸等-大",
+      "id": "注記-海、湾、灘、淵、浦、瀬、海峡、瀬戸等-大11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -61648,7 +61704,7 @@
       }
     },
     {
-      "id": "注記-海、湾、灘、淵、浦、瀬、海峡、瀬戸等-大",
+      "id": "注記-海、湾、灘、淵、浦、瀬、海峡、瀬戸等-大14",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -61989,7 +62045,7 @@
       }
     },
     {
-      "id": "注記-群島、列島、諸島、島の総称等-小",
+      "id": "注記-群島、列島、諸島、島の総称等-小11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -62342,7 +62398,7 @@
       }
     },
     {
-      "id": "注記-群島、列島、諸島、島の総称等-中",
+      "id": "注記-群島、列島、諸島、島の総称等-中11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -62695,7 +62751,7 @@
       }
     },
     {
-      "id": "注記-群島、列島、諸島、島の総称等-大",
+      "id": "注記-群島、列島、諸島、島の総称等-大11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -63048,7 +63104,7 @@
       }
     },
     {
-      "id": "注記-はえ、岩礁等-小",
+      "id": "注記-はえ、岩礁等-小11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -63389,7 +63445,7 @@
       }
     },
     {
-      "id": "注記-はえ、岩礁等-中",
+      "id": "注記-はえ、岩礁等-中11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -63730,7 +63786,7 @@
       }
     },
     {
-      "id": "注記-はえ、岩礁等-大",
+      "id": "注記-はえ、岩礁等-大11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -64071,7 +64127,7 @@
       }
     },
     {
-      "id": "注記-はえ、岩礁等-はえ、岩礁等",
+      "id": "注記-はえ、岩礁等-はえ、岩礁等14",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -64412,7 +64468,7 @@
       }
     },
     {
-      "id": "注記-道路施設（ＩＣ、PA、道の駅等）",
+      "id": "注記-道路施設（ＩＣ、PA、道の駅等）11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -64769,7 +64825,7 @@
       }
     },
     {
-      "id": "注記-道路構造物（橋、トンネル等）",
+      "id": "注記-道路構造物（橋、トンネル等）11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -65126,7 +65182,7 @@
       }
     },
     {
-      "id": "注記-鉄道駅名",
+      "id": "注記-鉄道駅名11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -65483,7 +65539,7 @@
       }
     },
     {
-      "id": "注記-鉄道構造物（橋、トンネル、操車場等）",
+      "id": "注記-鉄道構造物（橋、トンネル、操車場等）11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -65840,7 +65896,7 @@
       }
     },
     {
-      "id": "注記-港湾-小",
+      "id": "注記-港湾-小11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -66085,7 +66141,7 @@
       }
     },
     {
-      "id": "注記-港湾-中",
+      "id": "注記-港湾-中11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -66318,7 +66374,7 @@
       }
     },
     {
-      "id": "注記-港湾-大",
+      "id": "注記-港湾-大11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -66551,7 +66607,7 @@
       }
     },
     {
-      "id": "注記-港湾施設（フェリー発着所、埠頭等）",
+      "id": "注記-港湾施設（フェリー発着所、埠頭等）11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -66908,7 +66964,7 @@
       }
     },
     {
-      "id": "注記-空港名-小",
+      "id": "注記-空港名-小11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -67265,7 +67321,7 @@
       }
     },
     {
-      "id": "注記-空港名-中",
+      "id": "注記-空港名-中11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -67622,7 +67678,7 @@
       }
     },
     {
-      "id": "注記-空港名-大",
+      "id": "注記-空港名-大11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -67979,7 +68035,7 @@
       }
     },
     {
-      "id": "注記-構造物名称（高塔、煙突等）",
+      "id": "注記-構造物名称（高塔、煙突等）11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -68336,7 +68392,7 @@
       }
     },
     {
-      "id": "注記-ダム",
+      "id": "注記-ダム11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -68689,7 +68745,7 @@
       }
     },
     {
-      "id": "注記-堰",
+      "id": "注記-堰11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -69042,7 +69098,7 @@
       }
     },
     {
-      "id": "注記-河川・海岸施設（水門、堤防）",
+      "id": "注記-河川・海岸施設（水門、堤防）11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -69395,7 +69451,7 @@
       }
     },
     {
-      "id": "注記-土地利用名（演習場、ゴルフ場、遊園地、建設予定地等）-小",
+      "id": "注記-土地利用名（演習場、ゴルフ場、遊園地、建設予定地等）-小11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -69748,7 +69804,7 @@
       }
     },
     {
-      "id": "注記-土地利用名（演習場、ゴルフ場、遊園地、建設予定地等）-中",
+      "id": "注記-土地利用名（演習場、ゴルフ場、遊園地、建設予定地等）-中11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -70101,7 +70157,7 @@
       }
     },
     {
-      "id": "注記-土地利用名（演習場、ゴルフ場、遊園地、建設予定地等）-大",
+      "id": "注記-土地利用名（演習場、ゴルフ場、遊園地、建設予定地等）-大11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -70454,7 +70510,7 @@
       }
     },
     {
-      "id": "注記-史跡名勝天然記念物",
+      "id": "注記-史跡名勝天然記念物11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -70699,7 +70755,7 @@
       }
     },
     {
-      "id": "注記-公園-小",
+      "id": "注記-公園-小11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -71052,7 +71108,7 @@
       }
     },
     {
-      "id": "注記-公園-中",
+      "id": "注記-公園-中11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -71405,7 +71461,7 @@
       }
     },
     {
-      "id": "注記-公園-大",
+      "id": "注記-公園-大11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -71758,7 +71814,7 @@
       }
     },
     {
-      "id": "注記-合同庁舎",
+      "id": "注記-合同庁舎11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -72111,7 +72167,7 @@
       }
     },
     {
-      "id": "注記-国の機関（合同庁舎、矯正施設及び自衛隊を除く）",
+      "id": "注記-国の機関（合同庁舎、矯正施設及び自衛隊を除く）11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -72468,7 +72524,7 @@
       }
     },
     {
-      "id": "注記-矯正施設（刑務所、少年院等）",
+      "id": "注記-矯正施設（刑務所、少年院等）11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -72821,7 +72877,7 @@
       }
     },
     {
-      "id": "注記-整備局（北海道開発局・地方整備局）",
+      "id": "注記-整備局（北海道開発局・地方整備局）11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -73162,7 +73218,7 @@
       }
     },
     {
-      "id": "注記-自衛隊・米軍",
+      "id": "注記-自衛隊・米軍11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -73515,7 +73571,7 @@
       }
     },
     {
-      "id": "注記-消防署",
+      "id": "注記-消防署11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -73856,7 +73912,7 @@
       }
     },
     {
-      "id": "注記-病院",
+      "id": "注記-病院11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -74197,7 +74253,7 @@
       }
     },
     {
-      "id": "注記-保健所",
+      "id": "注記-保健所11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -74538,7 +74594,7 @@
       }
     },
     {
-      "id": "注記-水族館・動植物園",
+      "id": "注記-水族館・動植物園11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -74891,7 +74947,7 @@
       }
     },
     {
-      "id": "注記-外国公館",
+      "id": "注記-外国公館11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -75232,7 +75288,7 @@
       }
     },
     {
-      "id": "注記-神社",
+      "id": "注記-神社11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -75585,7 +75641,7 @@
       }
     },
     {
-      "id": "注記-寺院",
+      "id": "注記-寺院11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -75938,7 +75994,7 @@
       }
     },
     {
-      "id": "注記-商業施設",
+      "id": "注記-商業施設11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -76291,7 +76347,7 @@
       }
     },
     {
-      "id": "注記-高層施設",
+      "id": "注記-高層施設11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -76644,7 +76700,7 @@
       }
     },
     {
-      "id": "注記-文教施設",
+      "id": "注記-文教施設11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -77001,7 +77057,7 @@
       }
     },
     {
-      "id": "注記-その他の主要・著名な建物",
+      "id": "注記-その他の主要・著名な建物11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -77358,7 +77414,7 @@
       }
     },
     {
-      "id": "注記-VLBI観測点",
+      "id": "注記-VLBI観測点11",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -77699,7 +77755,7 @@
       }
     },
     {
-      "id": "注記-尖峰、丘、塚等",
+      "id": "注記-尖峰、丘、塚等14",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -78040,7 +78096,7 @@
       }
     },
     {
-      "id": "注記-高原、原、森、林、砂丘、湿原-小",
+      "id": "注記-高原、原、森、林、砂丘、湿原-小14",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -78381,7 +78437,7 @@
       }
     },
     {
-      "id": "注記-高原、原、森、林、砂丘、湿原-中",
+      "id": "注記-高原、原、森、林、砂丘、湿原-中14",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -78722,7 +78778,7 @@
       }
     },
     {
-      "id": "注記-高原、原、森、林、砂丘、湿原-大",
+      "id": "注記-高原、原、森、林、砂丘、湿原-大14",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -79063,7 +79119,7 @@
       }
     },
     {
-      "id": "注記-漁港",
+      "id": "注記-漁港14",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -79296,7 +79352,7 @@
       }
     },
     {
-      "id": "注記-県庁",
+      "id": "注記-県庁14",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -79637,7 +79693,7 @@
       }
     },
     {
-      "id": "注記-大学・大学院",
+      "id": "注記-大学・大学院14",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -79978,7 +80034,7 @@
       }
     },
     {
-      "id": "注記-短期大学",
+      "id": "注記-短期大学14",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -80319,7 +80375,7 @@
       }
     },
     {
-      "id": "注記-高等専門学校",
+      "id": "注記-高等専門学校14",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -80660,7 +80716,7 @@
       }
     },
     {
-      "id": "注記-特殊学校",
+      "id": "注記-特殊学校14",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -81001,7 +81057,7 @@
       }
     },
     {
-      "id": "注記-発電所",
+      "id": "注記-発電所14",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -81342,7 +81398,7 @@
       }
     },
     {
-      "id": "注記-料金所",
+      "id": "注記-料金所14",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -81683,7 +81739,7 @@
       }
     },
     {
-      "id": "注記-鉱山の鉱種名",
+      "id": "注記-鉱山の鉱種名14",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -81916,7 +81972,7 @@
       }
     },
     {
-      "id": "注記-その他",
+      "id": "注記-その他14",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -82257,7 +82313,7 @@
       }
     },
     {
-      "id": "注記-その他",
+      "id": "注記-その他17",
       "type": "symbol",
       "source": "v",
       "source-layer": "label",
@@ -82583,7 +82639,7 @@
       }
     },
     {
-      "id": "記号-電子基準点",
+      "id": "記号-電子基準点11",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -82615,7 +82671,7 @@
       }
     },
     {
-      "id": "記号-電子基準点",
+      "id": "記号-電子基準点14",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",
@@ -82663,7 +82719,7 @@
       }
     },
     {
-      "id": "記号-電子基準点(付)",
+      "id": "記号-電子基準点(付)14",
       "type": "symbol",
       "source": "v",
       "source-layer": "symbol",

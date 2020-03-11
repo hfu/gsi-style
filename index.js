@@ -13,7 +13,7 @@ for(layer of style.layers) {
   if (layer.type === 'background') {
   } else {
     layer.source = 'v'
-    layer.id = layer.metadata.path
+    layer.id = layer.metadata.path + layer.minzoom
     delete layer.metadata
     layers.push(layer)
   }
