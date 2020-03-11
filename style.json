@@ -60,10 +60,10 @@
         [
           "get",
           "ftCode"
-        ]
+        ],
         [
           5302
-        ]
+        ],
         true,
         false
       ],
@@ -91,52 +91,12 @@
       "type": "fill",
       "source": "v",
       "source-layer": "waterarea",
-      "minzoom": 4,
-      "maxzoom": 8,
       "filter": [
         "all",
         [
           "==",
           "ftCode",
           55000
-        ]
-      ],
-      "paint": {
-        "fill-color": "rgb(190,210,255)"
-      }
-    },
-    {
-      "id": "水域",
-      "type": "fill",
-      "source": "v",
-      "source-layer": "waterarea",
-      "minzoom": 8,
-      "maxzoom": 17,
-      "filter": [
-        "all",
-        [
-          "==",
-          "ftCode",
-          5000
-        ]
-      ],
-      "paint": {
-        "fill-color": "rgb(190,210,255)"
-      }
-    },
-    {
-      "id": "水域",
-      "type": "fill",
-      "source": "v",
-      "source-layer": "waterarea",
-      "minzoom": 17,
-      "maxzoom": 18,
-      "filter": [
-        "all",
-        [
-          "==",
-          "ftCode",
-          5000
         ]
       ],
       "paint": {
