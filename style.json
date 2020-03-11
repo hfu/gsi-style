@@ -13,6 +13,18 @@
   },
   "layers": [
     {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": [
+          "rgb",
+          255,
+          255,
+          255
+        ]
+      }
+    },
+    {
       "id": "河川-人工水路（地下）1",
       "type": "line",
       "source": "v",

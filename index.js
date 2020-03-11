@@ -7,7 +7,20 @@ delete style.sources['gsibv-vectortile-source-1-4-17']
 style.sources.v.tiles[0] = 
   'https://maps.gsi.go.jp/xyz/experimental_bvmap/{z}/{x}/{y}.pbf'
 
-layers = []
+layers = [
+{
+  id: 'background',
+  type: 'background',
+  paint: {
+    'background-color': [
+      'rgb',
+      255,
+      255,
+      255
+    ]
+  }
+}
+]
 
 let count = 0
 for(layer of style.layers) {
